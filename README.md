@@ -2,12 +2,19 @@
 
 ## 🗂 Project (Public)
 - [AdBlock-Thai-Filters](https://github.com/F1rstStr0ke/AdBlock-Thai-Filters)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/AdBlock-Thai-Filters)
 - [my-wallpaper-engine-workshop](https://github.com/F1rstStr0ke/my-wallpaper-engine-workshop)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/my-wallpaper-engine-workshop)
 - [Steam-Template](https://github.com/F1rstStr0ke/Steam-Template)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/Steam-Template?style=flat-square)
 - [platform-tools-x00td](https://github.com/F1rstStr0ke/platform-tools-x00td)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/platform-tools-x00td)
 - [Beautiful-original](https://github.com/F1rstStr0ke/Beautiful-original)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/Beautiful-original)
 - [JMusicBot-Heroku](https://github.com/F1rstStr0ke/JMusicBot-Heroku)<br>
-
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/JMusicBot-Heroku)
+- [42-4F-54-Web](https://github.com/F1rstStr0ke/42-4F-54-Web)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/42-4F-54-Web)
 
 ## 📫 Communicate
 - [Twitter](https://twitter.com/Faelayis)<br>
