@@ -1,5 +1,4 @@
 # Hi there 👋
-![Gif](https://data.whicdn.com/images/344644740/original.gif)<br>
 
 ## 🗂 Project (Public)
 - [AdBlock-Thai-Filters](https://github.com/F1rstStr0ke/AdBlock-Thai-Filters)<br>
@@ -18,6 +17,16 @@
 ## 😃 Other
 - [Gitlab](https://gitlab.com/F1rstStr0ke)<br>
 - [Crowdin (Translation team)](https://crowdin.com/profile/Faelayis)<br>
+
+## 🎶 Playlist 
+- [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
+- [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
+
+## ✌ Phrase
+> I don’t understand, I don’t care
+> About all you humans or the truth or love or the world or pain or life<br>
+
+> ไม่ว่าจะยกโทษหรือไม่ก็ตาม มันก็เป็นเรื่องที่ผ่านไปแล้ว ไม่ใช่ว่าจะมีอะไรเปลี่ยนแปลงขึ้นมาได้หรอก (絶園のテンペスト)
 
 <!--
 **F1rstStr0ke/F1rstStr0ke** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
