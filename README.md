@@ -3,6 +3,8 @@
 [![github streak](https://github-readme-streak-stats.herokuapp.com/?user=F1rstStr0ke&theme=slateorange)](https://github.com/F1rstStr0ke/F1rstStr0ke)
 
 ## 🗂 Project (Public)
+- [Faelayis-launcher](https://github.com/F1rstStr0ke/Faelayis-launcher)<br>
+![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/Faelayis-launcher)
 - [AdBlock-Thai-Filters](https://github.com/F1rstStr0ke/AdBlock-Thai-Filters)<br>
 ![GitHub last commit](https://img.shields.io/github/last-commit/F1rstStr0ke/AdBlock-Thai-Filters)
 - [my-wallpaper-engine-workshop](https://github.com/F1rstStr0ke/my-wallpaper-engine-workshop)<br>
