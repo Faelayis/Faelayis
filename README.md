@@ -18,7 +18,7 @@
 
 ### Music
 My Playlist
-<a href="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&redirect=true">
+<a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
   <img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
 </a>
 <br>
