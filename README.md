@@ -1,5 +1,5 @@
 # Hi there Welcome my profile <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px">
-[![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true)](https://github.com/Faelayis)
+[![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true)](#)
 [![](https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time)](https://wakatime.com/@Faelayis)
 
 <details>
@@ -20,7 +20,7 @@
 [![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
 [![](https://img.shields.io/badge/Ubisoft-0070ff?logo=Ubisoft&logoColor=white&style=for-the-badge)](https://r6.tracker.network/profile/id/56d07617-a3a6-4d5f-a54f-94b193afe77a)
 [![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white&style=for-the-badge)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
-[![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white&style=for-the-badge)](#)
+[![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white&style=for-the-badge)](#Gaming)
 [![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white&style=for-the-badge)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
 
 ### What i join
@@ -32,7 +32,7 @@
 [![](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white&style=for-the-badge)](https://nodejs.org/en)
 [![](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com)
 [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
-[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#)
+[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#what-i-use)
 [![](https://img.shields.io/badge/PowerShell-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
