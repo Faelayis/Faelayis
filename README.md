@@ -1,44 +1,35 @@
 # Hi there Welcome my profile👋
-[![github stats](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=slateorange)](https://github.com/Faelayis/Faelayis)
-[![github streak](https://github-readme-streak-stats.herokuapp.com/?user=Faelayis&theme=slateorange)](https://github.com/Faelayis/Faelayis)
+[![github stats](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
+[![github streak](https://github-readme-streak-stats.herokuapp.com/?user=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
 
-## 🗂 Project (Public)
-- [Faelayis-launcher](https://github.com/Faelayis/Faelayis-launcher)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/Faelayis-launcher)
-- [AdBlock-Thai-Filters](https://github.com/Faelayis/AdBlock-Thai-Filters)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/AdBlock-Thai-Filters)
-- [my-wallpaper-engine-workshop](https://github.com/Faelayis/my-wallpaper-engine-workshop)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/my-wallpaper-engine-workshop)
-- [Steam-Template](https://github.com/Faelayis/Steam-Template)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/Steam-Template?style=flat-square)
-- [platform-tools-x00td](https://github.com/Faelayis/platform-tools-x00td)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/platform-tools-x00td)
-- [Beautiful-original](https://github.com/Faelayis/Beautiful-original)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/Beautiful-original)
-- [JMusicBot-Heroku](https://github.com/Faelayis/JMusicBot-Heroku)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/JMusicBot-Heroku)
-- [42-4F-54-Web](https://github.com/Faelayis/42-4F-54-Web)<br>
-![GitHub last commit](https://img.shields.io/github/last-commit/Faelayis/42-4F-54-Web)
+### How to reach me
+[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
+[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
+[![](https://img.shields.io/badge/Steam-000000?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
 
-## 📫 Communicate
-- [Twitter](https://twitter.com/Faelayis)<br>
-- [Steam](https://steamcommunity.com/profiles/76561198302740141)<br>
-- [Discord](https://discord.com/users/328731868096888833)<br>
+### What i join
+[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
+[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&style=for-the-badge)](https://gitlab.com/Faelayis)
+[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&style=for-the-badge)](https://crowdin.com/profile/Faelayis)
 
-## 😃 Other
-- [Gitlab](https://gitlab.com/Faelayis)<br>
-- [Crowdin (Translation team)](https://crowdin.com/profile/Faelayis)<br>
+### What i use
+[![](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white&style=for-the-badge)](https://nodejs.org/en)
+[![](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com)
+[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
+[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)]()
+[![](https://img.shields.io/badge/PowerShell-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
+[![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
+[![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
+[![](https://img.shields.io/badge/Visual%20Studio%20Code-1DA1F2?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com)
+[![](https://img.shields.io/badge/Notepad++-90E59A?logo=Notepad++&logoColor=white&style=for-the-badge)](https://notepad-plus-plus.org)
 
-## 🎶 Playlist 
+### Music Playlist
 - [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
 - [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
 
-## ✌ Phrase
-> I don’t understand, I don’t care
-> About all you humans or the truth or love or the world or pain or life<br>
-
-> ไม่ว่าจะยกโทษหรือไม่ก็ตาม มันก็เป็นเรื่องที่ผ่านไปแล้ว ไม่ใช่ว่าจะมีอะไรเปลี่ยนแปลงขึ้นมาได้หรอก (絶園のテンペスト)
-
+### Phrase
+ I don’t understand, I don’t care About all you humans or the truth or love or the world or pain or life<br>
+ 
 <!--
 **Faelayis/Faelayis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
