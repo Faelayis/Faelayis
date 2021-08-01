@@ -1,12 +1,18 @@
 # Hi there Welcome my profile👋
-[![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
+[![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false)](https://github.com/Faelayis/Faelayis)
 [![](https://github-readme-streak-stats.herokuapp.com/?user=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
-[![](https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![](https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
 
 ### How to reach me
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discordapp.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
-[![](https://img.shields.io/badge/Steam-000000?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
+
+### Gaming
+[![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
+[![](https://img.shields.io/badge/Ubisoft-0070ff?logo=Ubisoft&logoColor=white&style=for-the-badge)](https://r6.tracker.network/profile/id/56d07617-a3a6-4d5f-a54f-94b193afe77a)
+[![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white&style=for-the-badge)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
+[![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white&style=for-the-badge)]()
+[![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white&style=for-the-badge)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
 
 ### What i join
 [![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
