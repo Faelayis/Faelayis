@@ -29,8 +29,8 @@
 - [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
 
 ### Phrase
- I don’t understand, I don’t care About all you humans or the truth or love or the world or pain or life<br>
- 
+ I don’t understand, I don’t care About all you humans or the truth or love or the world or pain or life [?](https://youtube.com/watch?v=KTZ-y85Erus&list=PL_ismTVBPULBJ-sgm64iUggHMaOwhIX-4&t=65s)<br>
+
 <!--
 **Faelayis/Faelayis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
