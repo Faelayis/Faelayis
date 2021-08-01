@@ -1,6 +1,7 @@
 # Hi there Welcome my profile👋
-[![github stats](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
-[![github streak](https://github-readme-streak-stats.herokuapp.com/?user=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
+[![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
+[![](https://github-readme-streak-stats.herokuapp.com/?user=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
+[![](https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ### How to reach me
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discordapp.com/users/328731868096888833)
