@@ -3,7 +3,7 @@
 [![github streak](https://github-readme-streak-stats.herokuapp.com/?user=Faelayis&theme=dark)](https://github.com/Faelayis/Faelayis)
 
 ### How to reach me
-[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
+[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discordapp.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
 [![](https://img.shields.io/badge/Steam-000000?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
 
