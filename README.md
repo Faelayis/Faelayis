@@ -1,4 +1,5 @@
 # Hi there Welcome my profile <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px"><a align="right" href="#"><img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FFaelayis&count_bg=%230D1117&title_bg=%230D1117&icon=&icon_color=%23E7E7E7&title=profile+view&edge_flat=false"/></a>
+
 [![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats)](#)
 [![](https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117)](https://wakatime.com/@Faelayis)
 
@@ -20,11 +21,9 @@
 
 ### Music
 
-My Playlist
 <a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
 <img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
-</a>
-<br>
+</a><a> My Playlist </a>
 
 - [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
 - [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
