@@ -55,7 +55,3 @@ My Playlist
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code-1DA1F2?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/Notepad++-90E59A?logo=Notepad++&logoColor=white&style=for-the-badge)](https://notepad-plus-plus.org)
-
-### Phrase
-
-I don’t understand, I don’t care About all you humans or the truth or love or the world or pain or life [?](https://youtube.com/watch?v=KTZ-y85Erus&list=PL_ismTVBPULBJ-sgm64iUggHMaOwhIX-4&t=65s)<br>
