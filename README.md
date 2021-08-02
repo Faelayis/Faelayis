@@ -24,6 +24,7 @@
 <a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
 <img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
 </a><a> My Playlist </a>
+<br>
 
 - [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
 - [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
