@@ -51,5 +51,6 @@
 [![](https://img.shields.io/badge/PowerShell-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
+[![](https://img.shields.io/badge/GitHub%20Desktop-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code-1DA1F2?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/Notepad++-90E59A?logo=Notepad++&logoColor=white&style=for-the-badge)](https://notepad-plus-plus.org)
