@@ -40,6 +40,7 @@
   My PC Specs
 </summary>
 <p>
+Desktop
 <br>
   <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white&labelColor=1fa2f9&style=for-the-badge" />
   <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%203700X-f1911d?labelColor=00a270&style=for-the-badge" />
