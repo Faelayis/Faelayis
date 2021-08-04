@@ -64,8 +64,8 @@ Laptop
 
 ### What i use
 
-[![](https://img.shields.io/badge/Node.js%2014-339933?logo=Node.js&logoColor=white&style=for-the-badge)](https://nodejs.org/en)
-[![](https://img.shields.io/badge/npm%207-CB3837?logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com)
+[![](https://img.shields.io/badge/Node.js%2014.17.4-339933?logo=Node.js&logoColor=white&style=for-the-badge)](https://nodejs.org/en)
+[![](https://img.shields.io/badge/npm%207.20.0-CB3837?logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com/package/npm/v/7.20.0)
 [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
 [![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
