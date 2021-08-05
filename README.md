@@ -10,7 +10,7 @@
   <img align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833"/>
 </a>
 <a href="https://wakatime.com/@Faelayis">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
+  <img align="left" src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
 </a>
 
 <details>
