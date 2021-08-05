@@ -9,7 +9,7 @@
 <a href="https://discord.com/users/328731868096888833">
   <img width="350" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/>
 </a>
-<a align="center" href="https://wakatime.com/@Faelayis">
+<a width="480" align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
 </a>
 <a href="https://wakatime.com/@Faelayis">
