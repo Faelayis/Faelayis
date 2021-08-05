@@ -8,6 +8,30 @@
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
 <a href="https://github.com/Faelayis?tab=repositories">
   <img width="339" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&count_private=false&theme=dark&hide_border=true&bg_color=0d1117&hide=html,css,scss,c%2B%2B,&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+
+### How to reach me
+
+[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discord.com/users/328731868096888833)
+[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
+
+### What i join
+
+[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
+[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&style=for-the-badge)](https://gitlab.com/Faelayis)
+[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&style=for-the-badge)](https://crowdin.com/profile/Faelayis)
+
+### What i use
+
+[![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
+[![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/NPM.json)](https://www.npmjs.com/package/npm/)
+[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
+[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#)
+[![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
+[![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
+[![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
+[![](https://img.shields.io/badge/GitHub%20Desktop%20|%20Beta-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com/release-notes/?env=beta)
+[![](https://img.shields.io/badge/Visual%20Studio%20Code%20|%20insiders-24bfa5?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/insiders/)
+
 </a>
 <details>
 <summary>
@@ -54,26 +78,3 @@ Laptop
 </p>
 </details>
 </details>
-
-### How to reach me
-
-[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discord.com/users/328731868096888833)
-[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
-
-### What i join
-
-[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
-[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&style=for-the-badge)](https://gitlab.com/Faelayis)
-[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&style=for-the-badge)](https://crowdin.com/profile/Faelayis)
-
-### What i use
-
-[![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
-[![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/NPM.json)](https://www.npmjs.com/package/npm/)
-[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
-[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#)
-[![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
-[![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
-[![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
-[![](https://img.shields.io/badge/GitHub%20Desktop%20|%20Beta-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com/release-notes/?env=beta)
-[![](https://img.shields.io/badge/Visual%20Studio%20Code%20|%20insiders-24bfa5?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/insiders/)
