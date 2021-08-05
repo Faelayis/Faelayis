@@ -16,6 +16,16 @@
 <br>
 
 [![](https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117)](#)
+  
+  ### Music
+
+<a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
+<img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
+</a><br><a> My Playlist </a>
+
+- [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
+- [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
+
   ### Gaming
 
 [![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
@@ -49,16 +59,6 @@ Laptop
 
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discord.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
-
-### Music
-
-<a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
-<img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
-</a><br><a> My Playlist </a>
-
-- [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
-- [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
-
 
 ### What i join
 
