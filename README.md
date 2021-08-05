@@ -4,7 +4,6 @@
   <img src="https://lanyard-profile-readme.vercel.app/api/328731868096888833" align="right" />
 </a>
 
-[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
 [![](https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true)](#)
 [![](https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117)](https://wakatime.com/@Faelayis)
 
