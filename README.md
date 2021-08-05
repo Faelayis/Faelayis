@@ -14,12 +14,11 @@
 </a>
 <details>
 <summary>
-  More 
+  More
 </summary>
 <br>
 
 [![](https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117)](#)
-
 </details>
 
 ### How to reach me
