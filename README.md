@@ -13,7 +13,7 @@
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
 </a>
 <a href="https://wakatime.com/@Faelayis">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&count_private=false&theme=dark&hide_border=true&bg_color=0d1117&hide=html,css,scss,c%2B%2B,&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="350" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&count_private=false&theme=dark&hide_border=true&bg_color=0d1117&hide=html,css,scss,c%2B%2B,&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 </a>
 <details>
 <summary>
