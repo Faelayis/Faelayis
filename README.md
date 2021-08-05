@@ -17,7 +17,7 @@
 
 [![](https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117)](#)
   
-  ### Music
+### Music
 
 <a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
 <img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
@@ -26,7 +26,7 @@
 - [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
 - [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
 
-  ### Gaming
+### Gaming
 
 [![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
 [![](https://img.shields.io/badge/Ubisoft-0070ff?logo=Ubisoft&logoColor=white&style=for-the-badge)](https://r6.tracker.network/profile/id/56d07617-a3a6-4d5f-a54f-94b193afe77a)
