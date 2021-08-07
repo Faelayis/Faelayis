@@ -15,12 +15,6 @@
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discord.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
 
-### What i join
-
-[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
-[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&style=for-the-badge)](https://gitlab.com/Faelayis)
-[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&style=for-the-badge)](https://crowdin.com/profile/Faelayis)
-
 ### What i use
 
 [![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
@@ -38,10 +32,15 @@
 <summary>
   More
 </summary>
-<br>
+
+### What i join
+
+[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
+[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&style=for-the-badge)](https://gitlab.com/Faelayis)
+[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&style=for-the-badge)](https://crowdin.com/profile/Faelayis)
 
 [![](https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117)](#)
-  
+
 ### Music
 
 <a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
