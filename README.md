@@ -25,7 +25,7 @@
 [![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
 [![](https://img.shields.io/badge/GitHub%20Desktop%20|%20Beta-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com/release-notes/?env=beta)
-[![](https://img.shields.io/badge/Visual%20Studio%20Code%20|%20insiders-24bfa5?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/insiders/)
+[![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/)
 
 </a>
 <details>
