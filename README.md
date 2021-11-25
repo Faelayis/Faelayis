@@ -35,9 +35,6 @@
 </a>
 
 ### Recent Activities
-<!--RECENT_ACTIVITY:last_update-->
-Last Updated: Thursday, November 25th, 2021, 6:58:15 PM
-<!--RECENT_ACTIVITY:last_update_end-->
 <!--RECENT_ACTIVITY:start-->
 1. 💪 Opened PR [#827](https://github.com/nextdns/metadata/pull/827) in [nextdns/metadata](https://github.com/nextdns/metadata)
 2. 💪 Opened PR [#4951](https://github.com/PreMiD/Presences/pull/4951) in [PreMiD/Presences](https://github.com/PreMiD/Presences)
