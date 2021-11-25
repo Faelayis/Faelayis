@@ -2,6 +2,12 @@ settings:
   commit_msg: "Update README with actions"
   max_lines: 5
   readme_file: "./README.md"
+  disabled_events:
+    - "issues"
+    - "review"
+    - "star"
+    - "wiki"
+  commit_name: "Github-Actions"
 messages:
   comments: "💬 Commented in {REPO}"
   issue_opened: "❗️ Opened issue in {REPO}"
