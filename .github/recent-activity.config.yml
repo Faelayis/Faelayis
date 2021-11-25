@@ -1,5 +1,11 @@
 settings:
+  commit_msg: "Update README with actions"
   max_lines: 5
   readme_file: "./README.md"
   disabled_events:
+    - "pr"
     - "fork"
+    - "star"
+    - "issues"
+    - "create_repo"
+    - "review"
