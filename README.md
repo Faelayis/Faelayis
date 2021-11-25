@@ -35,16 +35,11 @@
 </a>
 
 ### Recent Activities
-<!--RECENT_ACTIVITY:start-->
-1. 💪 Opened PR [#827](https://github.com/nextdns/metadata/pull/827) in [nextdns/metadata](https://github.com/nextdns/metadata)
-2. 💪 Opened PR [#4951](https://github.com/PreMiD/Presences/pull/4951) in [PreMiD/Presences](https://github.com/PreMiD/Presences)
-3. ✌️ Released [](https://github.com/Faelayis/changelog-generator/releases/tag/v1.4.9) in [Faelayis/changelog-generator](https://github.com/Faelayis/changelog-generator)
-4. 
-5. 
-<!--RECENT_ACTIVITY:end-->
 <!--RECENT_ACTIVITY:last_update-->
-Last Updated: Thursday, November 25th, 2021, 6:56:39 PM
 <!--RECENT_ACTIVITY:last_update_end-->
+<!--RECENT_ACTIVITY:start-->
+<!--RECENT_ACTIVITY:end-->
+
 
 <details>
 <summary>
