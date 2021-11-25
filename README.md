@@ -33,6 +33,11 @@
 [![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/)
 
 </a>
+
+### Recent Activities
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 <details>
 <summary>
   More
