@@ -35,12 +35,7 @@
 </a>
 
 ### Recent Activities
-<!--RECENT_ACTIVITY:start-->
-1. ✌️ Released [](https://github.com/Faelayis/changelog-generator/releases/tag/v1.4.9) in [Faelayis/changelog-generator](https://github.com/Faelayis/changelog-generator)
-2. ✌️ Released [Version 2.3.2](https://github.com/Faelayis/RPC-Pc-Status/releases/tag/v2.3.2) in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
-3. ✌️ Released [](https://github.com/Faelayis/changelog-generator/releases/tag/v1.4.9) in [Faelayis/changelog-generator](https://github.com/Faelayis/changelog-generator)
-4. ⭐ Starred [microsoft/TypeScript](https://github.com/microsoft/TypeScript)
-5. ⭐ Starred [microsoft/vscode](https://github.com/microsoft/vscode)
+<!--RECENT_ACTIVITY:last_update-->
 <!--RECENT_ACTIVITY:end-->
 
 <details>
