@@ -36,6 +36,8 @@
 
 ### Recent Activities
 <!--START_SECTION:activity-->
+1. 💪 Opened PR [#827](https://github.com/nextdns/metadata/pull/827) in [nextdns/metadata](https://github.com/nextdns/metadata)
+2. 💪 Opened PR [#4951](https://github.com/PreMiD/Presences/pull/4951) in [PreMiD/Presences](https://github.com/PreMiD/Presences)
 <!--END_SECTION:activity-->
 
 <details>
