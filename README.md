@@ -37,8 +37,8 @@
 ### Recent Activities
 <!--RECENT_ACTIVITY:start-->
 1. 💪 Opened PR in [nextdns/metadata](https://github.com/nextdns/metadata)
-2. 💪 Opened PR in [PreMiD/Presences](https://github.com/PreMiD/Presences)
-3. ✌️ Released in [Faelayis/changelog-generator](https://github.com/Faelayis/changelog-generator)
+2. 🔱 Forked [Faelayis/metadata](https://github.com/Faelayis/metadata) from [nextdns/metadata](https://github.com/nextdns/metadata)
+3. 💪 Opened PR in [PreMiD/Presences](https://github.com/PreMiD/Presences)
 <!--RECENT_ACTIVITY:end-->
 
 
