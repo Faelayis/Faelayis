@@ -24,7 +24,7 @@
 
 [![](https://img.shields.io/badge/endpoint?logoColor=white&flat-square&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
 [![](https://img.shields.io/badge/endpoint?logoColor=white&flat-square&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/NPM.json)](https://www.npmjs.com/package/npm/)
-[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&flat-square)](https://www.javascript.com)
+[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black&flat-square)](https://www.javascript.com)
 [![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white&flat-square)](https://www.typescriptlang.org)
 [![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&flat-square)](#)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&flat-square)](https://www.electronjs.org)
