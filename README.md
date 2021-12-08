@@ -40,9 +40,9 @@
 
 ### Recent Activities
 <!--RECENT_ACTIVITY:start-->
-1. 💪 Opened PR in [nextdns/metadata](https://github.com/nextdns/metadata)
-2. 🔱 Forked [Faelayis/metadata](https://github.com/Faelayis/metadata) from [nextdns/metadata](https://github.com/nextdns/metadata)
-3. 💪 Opened PR in [PreMiD/Presences](https://github.com/PreMiD/Presences)
+1. 💪 Opened PR in [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
+2. 🔱 Forked [Faelayis/LineBot](https://github.com/Faelayis/LineBot) from [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
+3. 💪 Opened PR in [nextdns/metadata](https://github.com/nextdns/metadata)
 <!--RECENT_ACTIVITY:end-->
 
 
