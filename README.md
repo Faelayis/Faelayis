@@ -6,7 +6,7 @@
 
 <a href="https://discordapp.com/users/328731868096888833">
   <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/>
--->
+
  
 <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
@@ -25,11 +25,12 @@
 [![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
 [![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/NPM.json)](https://www.npmjs.com/package/npm/)
 [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
+[![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org)
 [![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
 [![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
-[![](https://img.shields.io/badge/GitHub%20Desktop%20|%20Beta-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com/release-notes/?env=beta)
+[![](https://img.shields.io/badge/GitHub%20Desktop%20-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com/release-notes/?env=beta)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/)
 
 </a>
