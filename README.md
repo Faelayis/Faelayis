@@ -17,21 +17,21 @@
  
 ### How to reach me
 
-[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&style=for-the-badge)](https://discord.com/users/328731868096888833)
-[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Faelayis)
+[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&flat-square)](https://discord.com/users/328731868096888833)
+[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&flat-square)](https://twitter.com/Faelayis)
 
 ### What i use
 
-[![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
-[![](https://img.shields.io/badge/endpoint?logoColor=white&style=for-the-badge&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/NPM.json)](https://www.npmjs.com/package/npm/)
-[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=for-the-badge)](https://www.javascript.com)
-[![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org)
-[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge)](#)
-[![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&style=for-the-badge)](https://www.electronjs.org)
-[![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white&style=for-the-badge)](https://aka.ms/powershell-release?tag=stable)
-[![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&style=for-the-badge)](https://www.heroku.com)
-[![](https://img.shields.io/badge/GitHub%20Desktop%20-181717?logo=GitHub&logoColor=white&style=for-the-badge)](https://desktop.github.com/release-notes/?env=beta)
-[![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white&style=for-the-badge)](https://code.visualstudio.com/)
+[![](https://img.shields.io/badge/endpoint?logoColor=white&flat-square&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
+[![](https://img.shields.io/badge/endpoint?logoColor=white&flat-square&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/NPM.json)](https://www.npmjs.com/package/npm/)
+[![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=white&flat-square)](https://www.javascript.com)
+[![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white&flat-square)](https://www.typescriptlang.org)
+[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white&flat-square)](#)
+[![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white&flat-square)](https://www.electronjs.org)
+[![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white&flat-square)](https://aka.ms/powershell-release?tag=stable)
+[![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white&flat-square)](https://www.heroku.com)
+[![](https://img.shields.io/badge/GitHub%20Desktop%20-181717?logo=GitHub&logoColor=white&flat-square)](https://desktop.github.com/release-notes/?env=beta)
+[![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white&flat-square)](https://code.visualstudio.com/)
 
 </a>
 
@@ -50,9 +50,9 @@
 
 ### What i join
 
-[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&style=for-the-badge)](https://insider.windows.com/)
-[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&style=for-the-badge)](https://gitlab.com/Faelayis)
-[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&style=for-the-badge)](https://crowdin.com/profile/Faelayis)
+[![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white&flat-square)](https://insider.windows.com/)
+[![](https://img.shields.io/badge/gitlab-FCA121?logo=gitlab&logoColor=white&flat-square)](https://gitlab.com/Faelayis)
+[![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white&flat-square)](https://crowdin.com/profile/Faelayis)
 
 [![](https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117)](#)
 
@@ -67,11 +67,11 @@
 
 ### Gaming
 
-[![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white&style=for-the-badge)](https://steamcommunity.com/profiles/76561198302740141)
-[![](https://img.shields.io/badge/Ubisoft-0070ff?logo=Ubisoft&logoColor=white&style=for-the-badge)](https://r6.tracker.network/profile/id/56d07617-a3a6-4d5f-a54f-94b193afe77a)
-[![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white&style=for-the-badge)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
-[![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white&style=for-the-badge)](#)
-[![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white&style=for-the-badge)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
+[![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white&flat-square)](https://steamcommunity.com/profiles/76561198302740141)
+[![](https://img.shields.io/badge/Ubisoft-0070ff?logo=Ubisoft&logoColor=white&flat-square)](https://r6.tracker.network/profile/id/56d07617-a3a6-4d5f-a54f-94b193afe77a)
+[![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white&flat-square)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
+[![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white&flat-square)](#)
+[![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white&flat-square)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
 <details>
 <summary>
   My PC Specs
@@ -79,17 +79,17 @@
 <p>
 Desktop
 <br>
-  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white&labelColor=1fa2f9&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%203700X-f1911d?labelColor=00a270&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/RAM-16GB-bcbdc0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20590X-DA0032?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white&labelColor=1fa2f9&flat-square" />
+  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%203700X-f1911d?labelColor=00a270&flat-square" />
+  <img src="https://img.shields.io/badge/RAM-16GB-bcbdc0?flat-square" />
+  <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20590X-DA0032?flat-square" />
 </p>
 Laptop
 <p>
-  <img src="https://img.shields.io/badge/Windows%2010-blue?logo=windows&logoColor=white&labelColor=00adef&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%202700U-f1911d?labelColor=00a270&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/RAM-8GB-bcbdc0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20560X-DA0032?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Windows%2010-blue?logo=windows&logoColor=white&labelColor=00adef&flat-square" />
+  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%202700U-f1911d?labelColor=00a270&flat-square" />
+  <img src="https://img.shields.io/badge/RAM-8GB-bcbdc0?flat-square" />
+  <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20560X-DA0032?flat-square" />
 </p>
 </details>
 </details>
