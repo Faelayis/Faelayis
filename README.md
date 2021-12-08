@@ -86,7 +86,7 @@ Desktop
 </p>
 Laptop
 <p>
-  <img src="https://img.shields.io/badge/Windows%2010-blue?logo=windows&logoColor=white&labelColor=00adef&flat-square" />
+  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white&labelColor=1fa2f9&flat-square" />
   <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%202700U-f1911d?labelColor=00a270&flat-square" />
   <img src="https://img.shields.io/badge/RAM-8GB-bcbdc0?flat-square" />
   <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20560X-DA0032?flat-square" />
