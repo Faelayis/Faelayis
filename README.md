@@ -79,15 +79,15 @@
 <p>
 Desktop
 <br>
-  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white&labelColor=1fa2f9&flat-square" />
-  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%203700X-f1911d?labelColor=00a270&flat-square" />
+  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white?flat-square" />
+  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%203700X-ED1C24?flat-square" />
   <img src="https://img.shields.io/badge/RAM-16GB-bcbdc0?flat-square" />
   <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20590X-DA0032?flat-square" />
 </p>
 Laptop
 <p>
-  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white&labelColor=1fa2f9&flat-square" />
-  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%202700U-f1911d?labelColor=00a270&flat-square" />
+  <img src="https://img.shields.io/badge/Windows%2011-blue?logo=microsoft&logoColor=white?flat-square" />
+  <img src="https://img.shields.io/badge/CPU-AMD%20Ryzen%207%202700U-ED1C24?flat-square" />
   <img src="https://img.shields.io/badge/RAM-8GB-bcbdc0?flat-square" />
   <img src="https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%20560X-DA0032?flat-square" />
 </p>
