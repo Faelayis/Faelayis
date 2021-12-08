@@ -34,6 +34,7 @@
 [![](https://img.shields.io/badge/MongoDB-white?logo=MongoDB&logoColor=47A248&flat-square)](https://www.mongodb.com)
 [![](https://img.shields.io/badge/GitHub%20Desktop%20-181717?logo=GitHub&logoColor=white&flat-square)](https://desktop.github.com/release-notes/?env=beta)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white&flat-square)](https://code.visualstudio.com)
+[![](https://img.shields.io/badge/Visual%20Studio%20-5C2D91?logo=Visual%20Studio&logoColor=white&flat-square)](https://code.visualstudio.com)
 
 </a>
 
