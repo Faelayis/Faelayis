@@ -40,9 +40,9 @@
 
 ### Recent Activities
 <!--RECENT_ACTIVITY:start-->
-1. ❌ Closed PR in [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
-2. 💪 Opened PR in [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
-3. 🔱 Forked [Faelayis/LineBot](https://github.com/Faelayis/LineBot) from [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
+1. 🔱 Forked [Faelayis/LineBot](https://github.com/Faelayis/LineBot) from [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
+2. ❌ Closed PR in [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
+3. 💪 Opened PR in [Z0TEExt/LineBot](https://github.com/Z0TEExt/LineBot)
 <!--RECENT_ACTIVITY:end-->
 
 
