@@ -38,7 +38,9 @@
 
 </a>
 
+<!--
 ### Recent Activities
+-->
 <!--RECENT_ACTIVITY:start-->
 <!--RECENT_ACTIVITY:end-->
 
