@@ -42,6 +42,7 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
+1. ✌️ Released in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
 <!--RECENT_ACTIVITY:end-->
 
 
