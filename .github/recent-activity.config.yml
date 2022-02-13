@@ -8,7 +8,6 @@ settings:
     - "star"
     - "wiki"
     - "fork"
-    - "pr"
   commit_name: "Github-Actions"
 messages:
   comments: "💬 Commented in {REPO}"
