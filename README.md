@@ -1,19 +1,15 @@
 # Hi there Welcome my profile <a href="#"><img  width="35px" src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif"></a>
 <!-- <a align="right" href="#"><img width="48px" align="right" src="https://cdn.discordapp.com/emojis/863066039938711582.gif?url=https%3A%2F%2Fgithub.com%2FFaelayis&count_bg=%230D1117&title_bg=%230D1117&icon=&icon_color=%23E7E7E7&title=profile+view&edge_flat=false"/></a> -->
-<!--
+
 <a href="#">
   <img width="480" align="center" src="https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true"/>
-
 <a href="https://discordapp.com/users/328731868096888833">
   <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/>
-
- 
 <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
-    <!--
 <a href="https://github.com/Faelayis?tab=repositories">
   <img width="339" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&count_private=false&theme=dark&hide_border=true&bg_color=0d1117&hide=html,css,scss,c%2B%2B,&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
--->
+
  
 ### How to reach me
 
