@@ -13,9 +13,11 @@
  
 ### How to reach me
 
+[![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=white&flat-square)](https://t.me/Faelayis)
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&flat-square)](https://discord.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&flat-square)](https://twitter.com/Faelayis)
 
+  
 ### What i use
 
 [![](https://img.shields.io/badge/endpoint?logoColor=white&flat-square&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
