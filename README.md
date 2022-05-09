@@ -40,7 +40,7 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-1. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
+1. 💬 Commented in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
 <!--RECENT_ACTIVITY:end-->
 
 
