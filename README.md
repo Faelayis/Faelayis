@@ -40,7 +40,7 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-1. 📔 Created new repository [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+1. 💬 Commented in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
 <!--RECENT_ACTIVITY:end-->
 
 
