@@ -41,6 +41,10 @@
 -->
 <!--RECENT_ACTIVITY:start-->
 1. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+2. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+3. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+4. 💬 Commented in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
+5. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
 <!--RECENT_ACTIVITY:end-->
 
 
