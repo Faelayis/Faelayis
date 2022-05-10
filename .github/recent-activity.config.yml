@@ -22,5 +22,5 @@ messages:
   added_member: "🤝 Became collaborator on {REPO}"
   changes_approved: "👍 Approved {REPO}"
   changes_requested: "🔴 Requested changes in {REPO}"
-  new_release: "✌️ Released in {REPO}"
+  new_release: "✌️ Released {ID} in {REPO}"
   new_star: "⭐ Starred {REPO}"
