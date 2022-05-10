@@ -40,11 +40,11 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-1. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-2. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-3. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+1. ✌️ Released [Version 0.1.3](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.3) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+2. ✌️ Released [Version 0.1.2](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.2) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+3. ✌️ Released [Version 0.1.1](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.1) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
 4. 💬 Commented in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
-5. ✌️ Released in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+5. ✌️ Released [Version 0.1.0](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.0) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
 <!--RECENT_ACTIVITY:end-->
 
 
