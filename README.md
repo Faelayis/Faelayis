@@ -40,11 +40,11 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-1. 💪 Opened PR in [PreMiD/Presences](https://github.com/PreMiD/Presences)
-2. ✌️ Released [Version 1.0.0](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v1.0.0) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-3. ✌️ Released [Version 0.1.3](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.3) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-4. ✌️ Released [Version 0.1.2](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.2) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-5. ✌️ Released [Version 0.1.1](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.1) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+1. 💬 Commented in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
+2. 💪 Opened PR in [PreMiD/Presences](https://github.com/PreMiD/Presences)
+3. ✌️ Released [Version 1.0.0](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v1.0.0) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+4. ✌️ Released [Version 0.1.3](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.3) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
+5. ✌️ Released [Version 0.1.2](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v0.1.2) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
 <!--RECENT_ACTIVITY:end-->
 
 
