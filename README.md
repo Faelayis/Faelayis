@@ -42,9 +42,9 @@
 <!--RECENT_ACTIVITY:start-->
 1. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
 2. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
-3. 💪 Opened PR in [PreMiD/Localization](https://github.com/PreMiD/Localization)
-4. ✌️ Released [Version 3.1.0](https://github.com/Faelayis/RPC-Pc-Status/releases/tag/v3.1.0) in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
-5. 💬 Commented in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
+3. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
+4. 💪 Opened PR in [PreMiD/Localization](https://github.com/PreMiD/Localization)
+5. ✌️ Released [Version 3.1.0](https://github.com/Faelayis/RPC-Pc-Status/releases/tag/v3.1.0) in [Faelayis/RPC-Pc-Status](https://github.com/Faelayis/RPC-Pc-Status)
 <!--RECENT_ACTIVITY:end-->
 
 
