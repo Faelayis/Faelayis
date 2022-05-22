@@ -40,7 +40,6 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-1. 📔 Created new repository [Faelayis/GitHub](https://github.com/Faelayis/GitHub)
 <!--RECENT_ACTIVITY:end-->
 
 
