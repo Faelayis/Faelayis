@@ -41,10 +41,6 @@
 -->
 <!--RECENT_ACTIVITY:start-->
 1. 📔 Created new repository [Faelayis/GitHub](https://github.com/Faelayis/GitHub)
-2. 🤝 Became collaborator on [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-3. ❌ Closed PR in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-4. 💬 Commented in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
-5. ✌️ Released [Version 1.1.0](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord/releases/tag/v1.1.0) in [Faelayis/RPC-Pc-Status-BetterDiscord](https://github.com/Faelayis/RPC-Pc-Status-BetterDiscord)
 <!--RECENT_ACTIVITY:end-->
 
 
