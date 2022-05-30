@@ -1,4 +1,5 @@
 # Hi there welcome my profile <a href="#"><img  width="35px" src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif"></a>
+
 <!-- <a align="right" href="#"><img width="48px" align="right" src="https://cdn.discordapp.com/emojis/863066039938711582.gif?url=https%3A%2F%2Fgithub.com%2FFaelayis&count_bg=%230D1117&title_bg=%230D1117&icon=&icon_color=%23E7E7E7&title=profile+view&edge_flat=false"/></a> -->
 
 <a href="#">
@@ -8,16 +9,14 @@
 <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/>
 <a href="https://github.com/Faelayis?tab=repositories">
-  <img width="313" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&count_private=false&theme=dark&hide_border=true&bg_color=0d1117&hide=python,html,css,scss,c%2B%2B,&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html,css,scss&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 
- 
 ### The best way to contact me
 
 [![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=white&flat-square)](https://t.me/Faelayis)
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white&flat-square)](https://discord.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white&flat-square)](https://twitter.com/Faelayis)
 
-  
 ### What i use
 
 [![](https://img.shields.io/badge/endpoint?logoColor=white&flat-square&url=https://raw.githubusercontent.com/Faelayis/Faelayis/main/data/Node.json)](https://nodejs.org/en)
@@ -40,9 +39,9 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
+
 1. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
 <!--RECENT_ACTIVITY:end-->
-
 
 <details>
 <summary>
@@ -73,6 +72,7 @@
 [![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white&flat-square)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
 [![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white&flat-square)](#)
 [![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white&flat-square)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
+
 <details>
 <summary>
   My PC Specs
