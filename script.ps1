@@ -6,7 +6,7 @@ Foreach ($i in $array)
 {
  $json = Get-Content "$($i).json" | Out-String | ConvertFrom-Json
  $json.message = "$($version[[array]::IndexOf($array, $i)])"
- $json | ConvertTo-Json | Out-File "$($i).json"
+ $json | ConvertTo-Json -Depth 100 | Set-Content "$($i).json"
 }
 
 git add --all
