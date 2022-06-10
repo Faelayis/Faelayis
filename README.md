@@ -40,7 +40,6 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-
 1. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
 2. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
 <!--RECENT_ACTIVITY:end-->
