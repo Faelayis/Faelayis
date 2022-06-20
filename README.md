@@ -40,8 +40,11 @@
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
-1. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
-2. 💬 Commented in [PreMiD/Presences](https://github.com/PreMiD/Presences)
+1. ⬆️ Pushed 1 commit(s) to [Faelayis/DiscordYouActivity](https://github.com/Faelayis/DiscordYouActivity)
+2. ⬆️ Pushed 1 commit(s) to [Faelayis/DiscordYouActivity](https://github.com/Faelayis/DiscordYouActivity)
+3. ⬆️ Pushed 1 commit(s) to [Faelayis/DiscordYouActivity](https://github.com/Faelayis/DiscordYouActivity)
+4. ⬆️ Pushed 1 commit(s) to [Faelayis/DiscordYouActivity](https://github.com/Faelayis/DiscordYouActivity)
+5. ⬆️ Pushed 1 commit(s) to [Faelayis/DiscordYouActivity](https://github.com/Faelayis/DiscordYouActivity)
 <!--RECENT_ACTIVITY:end-->
 
 <details>
