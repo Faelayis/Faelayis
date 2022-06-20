@@ -9,7 +9,7 @@
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
 <a href="https://github.com/Faelayis?tab=repositories">
-  <img width="313" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html,css,scss&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 
 ### The best way to contact me
 
