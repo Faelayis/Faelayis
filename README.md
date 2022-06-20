@@ -30,7 +30,7 @@
 [![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white)](https://aka.ms/powershell-release?tag=stable)
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white)](https://www.heroku.com)
 [![](https://img.shields.io/badge/MongoDB-white?logo=MongoDB&logoColor=47A248)](https://www.mongodb.com)
-[![](https://img.shields.io/badge/GitHub%20Desktop%20-181717?logo=GitHub&logoColor=white)](https://desktop.github.com)
+[![](https://img.shields.io/badge/GitHub%20CLI%20|%20Desktop%20-181717?logo=GitHub&logoColor=white)](https://desktop.github.com)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/Visual%20Studio%202022-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/DevToys-6F31AA)](https://github.com/veler/DevToys#readme)
