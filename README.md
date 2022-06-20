@@ -33,7 +33,7 @@
 [![](https://img.shields.io/badge/GitHub%20Desktop%20-181717?logo=GitHub&logoColor=white)](https://desktop.github.com/release-notes/?env=beta)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/Visual%20Studio%202022-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
-
+[![](https://img.shields.io/badge/DevToys-6F31AA)](https://github.com/veler/DevToys#readme)
 </a>
 
 <!--
