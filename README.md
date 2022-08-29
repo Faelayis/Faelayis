@@ -28,6 +28,7 @@
 [![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white)](#)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white)](https://www.electronjs.org)
 [![](https://img.shields.io/badge/Tauri-24c8db?logo=Tauri&logoColor=FFC131)](https://tauri.app)
+[![](https://img.shields.io/badge/Windows%20UI%20Library-2C76CE)](https://microsoft.github.io/microsoft-ui-xaml)
 [![](https://img.shields.io/badge/ESLint-4B32C3?logo=ESLint&logoColor=white)](https://eslint.org)
 [![](https://img.shields.io/badge/Prettier-15222a?logo=Prettier&logoColor=white)](https://prettier.io)
 [![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white)](https://aka.ms/powershell-release?tag=stable)
