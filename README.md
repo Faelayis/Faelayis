@@ -25,6 +25,7 @@
 [![](https://img.shields.io/badge/Rust-black?logo=Rust&logoColor=white)](https://www.rust-lang.org)
 [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black)](https://www.javascript.com)
 [![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white)](https://www.typescriptlang.org)
+[![](https://img.shields.io/badge/Svelte-FF3E00?logo=Svelte&logoColor=white)](https://svelte.dev/)
 [![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white)](#)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white)](https://www.electronjs.org)
 [![](https://img.shields.io/badge/Tauri-24c8db?logo=Tauri&logoColor=FFC131)](https://tauri.app)
