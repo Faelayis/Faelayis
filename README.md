@@ -13,7 +13,7 @@
 
 ### The best way to contact me
 
-[![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=white)](https://t.me/Faelayis)
+[![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue)](https://t.me/Faelayis)
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white)](https://discord.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white)](https://twitter.com/Faelayis)
 
