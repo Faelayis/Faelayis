@@ -2,15 +2,19 @@
 
 <!-- <a align="right" href="#"><img width="48px" align="right" src="https://cdn.discordapp.com/emojis/863066039938711582.gif?url=https%3A%2F%2Fgithub.com%2FFaelayis&count_bg=%230D1117&title_bg=%230D1117&icon=&icon_color=%23E7E7E7&title=profile+view&edge_flat=false"/></a> -->
 
-<a href="#">
-  <img width="450" align="center" src="https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true"/>
+<a href="https://github.com/Faelayis#gh-light-mode-only">
+  <img width="450" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api?username=Faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true"/>
+<a href="https://github.com/Faelayis#gh-dark-mode-only">
+  <img width="450" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api?username=Faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true"/>
 <!-- <a href="https://discordapp.com/users/328731868096888833">
   <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/> -->
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
-<a href="https://github.com/Faelayis?tab=repositories">
-  <img width="313" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
-
+<a href="https://github.com/Faelayis?tab=repositories#gh-light-mode-only">
+  <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&theme=light&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+<a href="https://github.com/Faelayis?tab=repositories#gh-dark-mode-only">
+  <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+ 
 ### The best way to contact me
 
 [![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue)](https://t.me/Faelayis)
