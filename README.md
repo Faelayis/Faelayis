@@ -61,8 +61,11 @@
 [![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white)](https://insider.windows.com/)
 [![](https://img.shields.io/badge/GitLab-FCA121?logo=gitlab&logoColor=white)](https://gitlab.com/Faelayis)
 [![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white)](https://crowdin.com/profile/Faelayis)
-
-[![](https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117)](#)
+  
+<a href="https://github.com/Faelayis#gh-light-mode-only">
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=light"/>
+<a href="https://github.com/Faelayis#gh-dark-mode-only">
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117"/>
 
 ### Music
 
