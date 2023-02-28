@@ -11,10 +11,10 @@
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
 <a href="https://github.com/Faelayis?tab=repositories#gh-light-mode-only">
-  <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&theme=light&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html,css,procfile&theme=light&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 <a href="https://github.com/Faelayis?tab=repositories#gh-dark-mode-only">
   <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html,css,procfile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
- 
+
 ### The best way to contact me
 
 [![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue)](https://t.me/Faelayis)
