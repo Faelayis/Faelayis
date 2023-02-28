@@ -13,7 +13,7 @@
 <a href="https://github.com/Faelayis?tab=repositories#gh-light-mode-only">
   <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&theme=light&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 <a href="https://github.com/Faelayis?tab=repositories#gh-dark-mode-only">
-  <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" height="177.27" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faelayis&hide=python,html,css,procfile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10)](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
  
 ### The best way to contact me
 
