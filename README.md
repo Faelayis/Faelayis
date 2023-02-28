@@ -84,7 +84,7 @@
 [![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
 [![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white)](#)
 [![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
-[![](https://img.shields.io/badge/Osu!-FF66AA?logo=osu!&logoColor=white)](https://osu.ppy.sh/users/15524508)
+[![](https://img.shields.io/badge/osu!-FF66AA?logo=osu!&logoColor=white)](https://osu.ppy.sh/users/15524508)
 
 <!-- <details>
 <summary>
