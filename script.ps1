@@ -1,5 +1,5 @@
 git fetch --force
-$array = @('Node','NPM','Yarn')
+$array = @('Node','NPM','Yarn','PNPM')
 $version = @("Node.js $(node -v)","NPM $(npm -v)","Yarn $(Yarn -v)")
 
 Foreach ($i in $array)

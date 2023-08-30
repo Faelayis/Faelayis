@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "label": "",
-  "message": "Yarn 3.4.1",
-  "color": "2C8EBB",
-  "namedLogo": "Yarn"
+    "schemaVersion":  1,
+    "label":  "",
+    "message":  "Yarn 3.4.1",
+    "color":  "2C8EBB",
+    "namedLogo":  "Yarn"
 }
