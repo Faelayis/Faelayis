@@ -22,10 +22,10 @@
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white)](https://twitter.com/Faelayis)
 
 ### What i use
+<!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
 
 [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Node.json)](https://nodejs.org/en)
 [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/NPM.json)](https://www.npmjs.com/package/npm)
-<!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
 [![](https://img.shields.io/badge/PNPM-white?logo=pnpm&logoColor=F69220)](https://pnpm.io)
 [![](https://img.shields.io/badge/Rust-black?logo=Rust&logoColor=white)](https://www.rust-lang.org)
 [![](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com)
