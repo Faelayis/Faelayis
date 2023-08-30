@@ -24,26 +24,30 @@
 ### What i use
 
 [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Node.json)](https://nodejs.org/en)
-[![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/NPM.json)](https://www.npmjs.com/package/npm/)
-[![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com)
+[![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/NPM.json)](https://www.npmjs.com/package/npm)
+<!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
 [![](https://img.shields.io/badge/PNPM-white?logo=pnpm&logoColor=F69220)](https://pnpm.io)
 [![](https://img.shields.io/badge/Rust-black?logo=Rust&logoColor=white)](https://www.rust-lang.org)
+[![](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com)
 [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black)](https://www.javascript.com)
 [![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white)](https://www.typescriptlang.org)
-[![](https://img.shields.io/badge/Svelte-FF3E00?logo=Svelte&logoColor=white)](https://svelte.dev/)
-[![](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white)](#)
+[![](https://img.shields.io/badge/Svelte-FF3E00?logo=Svelte&logoColor=white)](https://svelte.dev)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white)](https://www.electronjs.org)
 [![](https://img.shields.io/badge/Tauri-24c8db?logo=Tauri&logoColor=FFC131)](https://tauri.app)
 [![](https://img.shields.io/badge/Windows%20UI%20Library-2C76CE)](https://microsoft.github.io/microsoft-ui-xaml)
 [![](https://img.shields.io/badge/ESLint-4B32C3?logo=ESLint&logoColor=white)](https://eslint.org)
 [![](https://img.shields.io/badge/Prettier-15222a?logo=Prettier&logoColor=white)](https://prettier.io)
 [![](https://img.shields.io/badge/PowerShell%20Core-5391FE?logo=PowerShell&logoColor=white)](https://aka.ms/powershell-release?tag=stable)
+[![](https://img.shields.io/badge/vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
 [![](https://img.shields.io/badge/Heroku-430098?logo=Heroku&logoColor=white)](https://www.heroku.com)
+[![](https://img.shields.io/badge/Prisma-2D3748?logo=Prisma&logoColor=white)](https://www.prisma.io)
 [![](https://img.shields.io/badge/MongoDB-white?logo=MongoDB&logoColor=47A248)](https://www.mongodb.com)
+[![](https://img.shields.io/badge/Supabase-white?logo=Supabase&logoColor=3FCF8E)](https://supabase.com)
 [![](https://img.shields.io/badge/GitHub%20CLI%20|%20Desktop%20-181717?logo=GitHub&logoColor=white)](https://cli.github.com)
 [![](https://img.shields.io/badge/Visual%20Studio%20Code%20-007ACC?logo=VisualStudioCode&logoColor=white)](https://code.visualstudio.com)
-[![](https://img.shields.io/badge/Visual%20Studio%202022-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
-[![](https://img.shields.io/badge/DevToys-6F31AA)](https://github.com/veler/DevToys#readme)
+[![](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
+[![](https://img.shields.io/badge/DevToys-7d3aba)](https://github.com/veler/DevToys#readme)
+[![](https://img.shields.io/badge/PowerToys-666666)](https://github.com/microsoft/PowerToys)
 </a>
 
 <!--
