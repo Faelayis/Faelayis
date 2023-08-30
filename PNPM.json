@@ -1,7 +1,7 @@
 {
     "schemaVersion":  1,
     "label":  "",
-    "message":  "",
+    "message":  "PNPM 8.6.12",
     "color":  "339933",
-    "namedLogo":  "Node.js"
+    "namedLogo":  "pnpm"
 }
