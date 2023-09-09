@@ -11,9 +11,9 @@
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://grs-faelayis.vercel.app/api/wakatime?username=faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
 <a href="https://github.com/Faelayis?tab=repositories#gh-light-mode-only">
-  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 <a href="https://github.com/Faelayis?tab=repositories#gh-dark-mode-only">
-  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 
 ### The best way to contact me
 
