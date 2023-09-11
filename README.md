@@ -2,14 +2,43 @@
 
 <!-- <a align="right" href="#"><img width="48px" align="right" src="https://cdn.discordapp.com/emojis/863066039938711582.gif?url=https%3A%2F%2Fgithub.com%2FFaelayis&count_bg=%230D1117&title_bg=%230D1117&icon=&icon_color=%23E7E7E7&title=profile+view&edge_flat=false"/></a> -->
 
-<a href="https://github.com/Faelayis#gh-light-mode-only">
-  <img width="450" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"/>
-<a href="https://github.com/Faelayis#gh-dark-mode-only">
-  <img width="450" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api?username=faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"/>
+<picture>
+  <source
+    align="center"
+    width="450" height="177.27"
+    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    align="center"
+    width="450" height="177.27"
+    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img align="center" width="450" height="177.27" src="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"/>
+</picture>
+
+<picture>
+  <source
+    align="center"
+    width="313" height="177.27"
+    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    align="center"
+    width="313" height="177.27"
+    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img align="center" width="313" height="177.27" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"/>
+</picture>
+
 <!-- <a href="https://discordapp.com/users/328731868096888833">
   <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/> -->
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://grs-faelayis.vercel.app/api/wakatime?username=faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
+
 <a href="https://github.com/Faelayis?tab=repositories#gh-light-mode-only">
   <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 <a href="https://github.com/Faelayis?tab=repositories#gh-dark-mode-only">
@@ -22,6 +51,7 @@
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white)](https://twitter.com/Faelayis)
 
 ### What i use
+
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/NPM.json)](https://www.npmjs.com/package/npm) -->
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
 <!-- [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black)](https://www.javascript.com) -->
@@ -67,7 +97,7 @@
 [![](https://img.shields.io/badge/Windows%20insider-0078D6?logo=windows&logoColor=white)](https://insider.windows.com/)
 [![](https://img.shields.io/badge/GitLab-FCA121?logo=gitlab&logoColor=white)](https://gitlab.com/Faelayis)
 [![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white)](https://crowdin.com/profile/Faelayis)
-  
+
 <a href="https://github.com/Faelayis#gh-light-mode-only">
   <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=light"/>
 <a href="https://github.com/Faelayis#gh-dark-mode-only">
