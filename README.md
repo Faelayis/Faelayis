@@ -6,39 +6,41 @@
   <source
     align="center"
     width="450" height="177.27"
-    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
     media="(prefers-color-scheme: dark)"
+    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
   />
   <source
     align="center"
     width="450" height="177.27"
-    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
   />
   <img align="center" width="450" height="177.27" src="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"/>
 </picture>
-
-<picture>
+<!-- <picture>
   <source
     align="center"
     width="313" height="177.27"
-    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true"
     media="(prefers-color-scheme: dark)"
+    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true"
   />
   <source
     align="center"
     width="313" height="177.27"
-    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"
   />
   <img align="center" width="313" height="177.27" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"/>
-</picture>
+</picture> -->
+<a href="https://github.com/Faelayis#gh-light-mode-only">
+  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+<a href="https://github.com/Faelayis#gh-dark-mode-only">
+  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
 
 <!-- <a href="https://discordapp.com/users/328731868096888833">
   <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/> -->
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://grs-faelayis.vercel.app/api/wakatime?username=faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
-
 
 ### The best way to contact me
 
