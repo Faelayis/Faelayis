@@ -33,9 +33,9 @@
   <img align="center" width="313" height="177.27" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"/>
 </picture> -->
 <a href="https://github.com/Faelayis#gh-light-mode-only">
-  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&theme=light&layout=compact&langs_count=10&count_private=true"/>
 <a href="https://github.com/Faelayis#gh-dark-mode-only">
-  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true](https://github.com/Faelayis?tab=repositories&q=&type=public"/>
+  <img width="313" height="177.27" align="center" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide=javascript,python,html,css,procfile,powershell,batchfile,shell,php,ruby,handlebars,scss,makefile&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true"/>
 
 <!-- <a href="https://discordapp.com/users/328731868096888833">
   <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/> -->
