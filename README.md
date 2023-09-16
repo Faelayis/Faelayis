@@ -75,7 +75,7 @@
 [![](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/DevToys-7d3aba)](https://github.com/veler/DevToys#readme)
 [![](https://img.shields.io/badge/PowerToys-666666)](https://github.com/microsoft/PowerToys)
-<a href="#"><img width="31px" style="transform:scaleX(-1)" src="https://cdn3.emoji.gg/emojis/4095_NezukoRunning.gif"/></a>
+<a href="#"><img width="31px" src="https://cdn.discordapp.com/attachments/933328430404087818/1152605316945551400/NezukoRunning.gif"/></a>
 
 <!--
 ### Recent Activities
