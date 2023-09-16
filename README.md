@@ -1,50 +1,81 @@
-# Hi there welcome my profile <a href="#"><img height="30" width="30px" src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif"></a>
+<!-- @format -->
 
-<!-- <a align="right" href="#"><img width="48px" align="right" src="https://cdn.discordapp.com/emojis/863066039938711582.gif?url=https%3A%2F%2Fgithub.com%2FFaelayis&count_bg=%230D1117&title_bg=%230D1117&icon=&icon_color=%23E7E7E7&title=profile+view&edge_flat=false"/></a> -->
+# Hi there welcome my profile <img width="25px" src="https://emoji.discadia.com/emojis/9cfda6cf-3635-4053-8cd8-05d91b1c0a6f.GIF"/>
+
+<head>
+   <style>
+      details > summary {
+         list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+         display: none;
+      }
+   </style>
+</head>
 
 <picture>
-  <source
-    align="center"
-    width="450" height="177.27"
-    media="(prefers-color-scheme: dark)"
-    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
-  />
-  <source
-    align="center"
-    width="450" height="177.27"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"
-  />
-  <img align="center" width="450" height="177.27" src="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile"/>
+   <source
+      align="center"
+      width="450"
+      height="177.27"
+      media="(prefers-color-scheme: dark)"
+      srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=dark&hide_title=false&show_icons=true&hide_border=true&bg_color=0d1117&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile" />
+   <source
+      align="center"
+      width="450"
+      height="177.27"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+      srcset="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile" />
+   <img
+      align="center"
+      width="450"
+      height="177.27"
+      src="https://grs-faelayis.vercel.app/api?username=faelayis&theme=light&hide_title=false&show_icons=true&custom_title=GitHub%20Stats&icon_color=fe926b&include_all_commits=true&count_private=true&rank_icon=percentile" />
 </picture>
 <picture>
-  <source
-    align="center"
-    width="313" height="177.27"
-    media="(prefers-color-scheme: dark)"
-    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile"
-  />
-  <source
-    align="center"
-    width="313" height="177.27"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-    srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile"
-  />
-  <img align="center" width="313" height="177.27" src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile"/>
+   <source
+      align="center"
+      width="313"
+      height="177.27"
+      media="(prefers-color-scheme: dark)"
+      srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
+   <source
+      align="center"
+      width="313"
+      height="177.27"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+      srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
+   <img
+      align="center"
+      width="313"
+      height="177.27"
+      src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
 </picture>
 
-<!-- <a href="https://discordapp.com/users/328731868096888833">
-  <img height="189" width="354" align="right" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117"/> -->
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://grs-faelayis.vercel.app/api/wakatime?username=faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
 
-### The best way to contact me
+### The best way to contact me <img width="11px" src="https://cdn.discordapp.com/emojis/969498343208267837.gif"/>
 
-[![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue)](https://t.me/Faelayis)
-[![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white)](https://discord.com/users/328731868096888833)
-[![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white)](https://twitter.com/Faelayis)
+<details>
+   <summary>
+      <a href="https://t.me/Faelayis">
+         <img src="https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue" />
+      </a>
+      <a style="cursor: pointer">
+         <img src="https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white" />
+      </a>
+      <a href="https://twitter.com/Faelayis">
+         <img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white" />
+      </a>
+   </summary>
+   <a href="https://discordapp.com/users/328731868096888833">
+      <img height="189" width="354" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117" />
+   </a>
+</details>
 
-### What i use
+
+### What i use <img width="10px" src="https://cdn.discordapp.com/emojis/816883329583808612.gif"/>
 
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/NPM.json)](https://www.npmjs.com/package/npm) -->
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
@@ -73,18 +104,17 @@
 [![](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/DevToys-7d3aba)](https://github.com/veler/DevToys#readme)
 [![](https://img.shields.io/badge/PowerToys-666666)](https://github.com/microsoft/PowerToys)
-</a>
+<img width="31px" style="transform:scaleX(-1)"  src="https://cdn3.emoji.gg/emojis/4095_NezukoRunning.gif"/>
 
 <!--
 ### Recent Activities
 -->
 <!--RECENT_ACTIVITY:start-->
 <!--RECENT_ACTIVITY:end-->
-
 <details>
-<summary>
-  More
-</summary>
+   <summary>
+      <img width="20px" src="https://cdn.discordapp.com/emojis/969490978379546685.gif" />
+   </summary>
 
 ### What i join
 
@@ -93,27 +123,31 @@
 [![](https://img.shields.io/badge/Crowdin-2E3340?logo=Crowdin&logoColor=white)](https://crowdin.com/profile/Faelayis)
 
 <a href="https://github.com/Faelayis#gh-light-mode-only">
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=light"/>
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=light" /></a>
 <a href="https://github.com/Faelayis#gh-dark-mode-only">
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117"/>
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=Faelayis&theme=dark&hide_border=true&background=0D1117" /></a>
 
 ### Music
 
-<a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem">
-<img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" />
-</a><br><a> My Playlist </a>
+<body>
+   <a href="https://open.spotify.com/user/21u7kzfi34c6rbzs2evuoeqda">
+      <img align="left" src="https://spotify-github-profile.vercel.app/api/view?uid=21u7kzfi34c6rbzs2evuoeqda&cover_image=true&theme=novatorem" alt="Spotify Profile" />
+   </a>
+   <a>My Playlist </a>
+   <ul>
+      <li><a href="https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c">Favorite Songs</a></li>
+      <li><a href="https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b">My Japan kawaii</a></li>
+   </ul>
+</body>
 
-- [Favorite Songs](https://open.spotify.com/playlist/0d8BzvaoALv3thWNx3B6ou?si=94a3591d60e94d7c)<br>
-- [My Japan kawaii](https://open.spotify.com/playlist/5Nk8ixG6MS83FkT3toaBMb?si=9b0ffa98e2f8467b)<br>
-
-### Gaming
+<!-- ### Gaming
 
 [![](https://img.shields.io/badge/Steam-1b2838?logo=Steam&logoColor=white)](https://steamcommunity.com/profiles/76561198302740141)
 [![](https://img.shields.io/badge/Ubisoft-0070ff?logo=Ubisoft&logoColor=white)](https://r6.tracker.network/profile/id/56d07617-a3a6-4d5f-a54f-94b193afe77a)
 [![](https://img.shields.io/badge/Origin-F56C2D?logo=Origin&logoColor=white)](https://www.origin.com/tha/th-th/profile/user/Us_m7_zkAXm4u_A4yP5DQA--/)
 [![](https://img.shields.io/badge/Epic%20Games-313131?logo=EpicGames&logoColor=white)](#)
 [![](https://img.shields.io/badge/Xbox-107C10?logo=Xbox&logoColor=white)](https://account.xbox.com/en-us/profile?gamertag=F1rstStr0ke&activetab=main:mainTab3)
-[![](https://img.shields.io/badge/osu!-FF66AA?logo=osu!&logoColor=white)](https://osu.ppy.sh/users/15524508)
+[![](https://img.shields.io/badge/osu!-FF66AA?logo=osu!&logoColor=white)](https://osu.ppy.sh/users/15524508) -->
 
 <!-- <details>
 <summary>
@@ -136,3 +170,5 @@ Laptop
 </p>
 </details>
 </details> -->
+
+</details>
