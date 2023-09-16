@@ -1,17 +1,5 @@
-<!-- @format -->
-
 # Hi there welcome my profile <img width="25px" src="https://emoji.discadia.com/emojis/9cfda6cf-3635-4053-8cd8-05d91b1c0a6f.GIF"/>
 
-<head>
-   <style>
-      details > summary {
-         list-style: none;
-      }
-      details > summary::-webkit-details-marker {
-         display: none;
-      }
-   </style>
-</head>
 
 <picture>
    <source
@@ -57,22 +45,15 @@
 
 ### The best way to contact me <img width="11px" src="https://cdn.discordapp.com/emojis/969498343208267837.gif"/>
 
-<details>
-   <summary>
-      <a href="https://t.me/Faelayis">
-         <img src="https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue" />
-      </a>
-      <a style="cursor: pointer">
-         <img src="https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white" />
-      </a>
-      <a href="https://twitter.com/Faelayis">
-         <img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white" />
-      </a>
-   </summary>
-   <a href="https://discordapp.com/users/328731868096888833">
-      <img height="189" width="354" src="https://lanyard-profile-readme.vercel.app/api/328731868096888833?bg=0d1117" />
-   </a>
-</details>
+<a href="https://t.me/Faelayis">
+   <img src="https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue" />
+</a>
+<a style="cursor: pointer">
+   <img src="https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white" />
+</a>
+<a href="https://twitter.com/Faelayis">
+   <img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white" />
+</a>
 
 
 ### What i use <img width="10px" src="https://cdn.discordapp.com/emojis/816883329583808612.gif"/>
