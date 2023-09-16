@@ -1,4 +1,4 @@
-# Hi there welcome my profile <picture><source width="25px" src="https://emoji.discadia.com/emojis/9cfda6cf-3635-4053-8cd8-05d91b1c0a6f.GIF" /></picture>
+# Hi there welcome my profile <picture><source width="25px" srcset="https://emoji.discadia.com/emojis/9cfda6cf-3635-4053-8cd8-05d91b1c0a6f.GIF" /></picture>
 
 <picture>
    <source
@@ -42,13 +42,13 @@
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://grs-faelayis.vercel.app/api/wakatime?username=faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
 
-### The best way to contact me <picture><source width="11px" src="https://cdn.discordapp.com/emojis/969498343208267837.gif" /></picture>
+### The best way to contact me <picture><source width="11px" srcset="https://cdn.discordapp.com/emojis/969498343208267837.gif" /></picture>
 
 [![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue)](https://t.me/Faelayis)
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white)](https://discord.com/users/328731868096888833)
 [![](https://img.shields.io/badge/Twitter-1DA1F2?logo=Twitter&logoColor=white)](https://twitter.com/Faelayis)
 
-### What i use <picture><source width="10px" src="https://cdn.discordapp.com/emojis/816883329583808612.gif" /></picture>
+### What i use <picture><source width="10px" srcset="https://cdn.discordapp.com/emojis/816883329583808612.gif" /></picture>
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/NPM.json)](https://www.npmjs.com/package/npm) -->
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
 <!-- [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black)](https://www.javascript.com) -->
@@ -76,7 +76,7 @@
 [![](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=Visual%20Studio&logoColor=white)](https://code.visualstudio.com)
 [![](https://img.shields.io/badge/DevToys-7d3aba)](https://github.com/veler/DevToys#readme)
 [![](https://img.shields.io/badge/PowerToys-666666)](https://github.com/microsoft/PowerToys)
-<picture><source width="31px" style="transform:scaleX(-1)"  src="https://cdn3.emoji.gg/emojis/4095_NezukoRunning.gif"/></picture>
+<picture><source width="31px" style="transform:scaleX(-1)"  srcset="https://cdn3.emoji.gg/emojis/4095_NezukoRunning.gif"/></picture>
 
 <!--
 ### Recent Activities
