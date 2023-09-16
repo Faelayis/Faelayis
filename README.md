@@ -41,7 +41,7 @@
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
   <img src="https://grs-faelayis.vercel.app/api/wakatime?username=faelayis&theme=dark&layout=compact&range=all_time&hide_border=true&bg_color=0d1117"/> -->
 
-### The best way to contact me <a href="#"><img width="11px" src="https://cdn.discordapp.com/emojis/969498343208267837.gif" /></a>
+### The best way to contact me <a href="#"><img width="12px" src="https://cdn.discordapp.com/emojis/969498343208267837.gif" /></a>
 
 [![](https://img.shields.io/badge/Telegram-FFFFFF?logo=telegram&logoColor=Blue)](https://t.me/Faelayis)
 [![](https://img.shields.io/badge/Discord-5865F2?logo=Discord&logoColor=white)](https://discord.com/users/328731868096888833)
@@ -56,7 +56,7 @@
 [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/PNPM.json)](https://pnpm.io)
 [![](https://img.shields.io/badge/Rust-black?logo=Rust&logoColor=white)](https://www.rust-lang.org)
 [![](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com)
-[![](https://img.shields.io/badge/C%20Sharp-239120?logo=csharp&logoColor=white)](https://dotnet.microsoft.com/en-us/languages/csharp)
+[![](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)](https://dotnet.microsoft.com/en-us/languages/csharp)
 [![](https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=white)](https://www.typescriptlang.org)
 [![](https://img.shields.io/badge/Svelte-FF3E00?logo=Svelte&logoColor=white)](https://svelte.dev)
 [![](https://img.shields.io/badge/Electron-47848F?logo=Electron&logoColor=white)](https://www.electronjs.org)
