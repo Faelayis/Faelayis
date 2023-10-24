@@ -24,18 +24,18 @@
       width="313"
       height="177.27"
       media="(prefers-color-scheme: dark)"
-      srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
+      srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&hide_border=true&bg_color=0d1117&theme=dark&layout=compact&langs_count=10&count_private=true&exclude_repo=minecraft-server&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
    <source
       align="center"
       width="313"
       height="177.27"
       media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-      srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
+      srcset="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&exclude_repo=minecraft-server&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
    <img
       align="center"
       width="313"
       height="177.27"
-      src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
+      src="https://grs-faelayis.vercel.app/api/top-langs/?username=faelayis&theme=light&layout=compact&langs_count=10&count_private=true&exclude_repo=minecraft-server&hide=javascript.python.html.css.procfile.powershell.batchfile.shell.php.ruby.handlebars.scss.makefile" />
 </picture>
 
 <!-- <a align="center" href="https://wakatime.com/@Faelayis">
