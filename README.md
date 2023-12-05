@@ -1,4 +1,4 @@
-# Hi there welcome my profile <a href="#"><img width="25px" src="https://emoji.discadia.com/emojis/9cfda6cf-3635-4053-8cd8-05d91b1c0a6f.GIF"/></a>
+# Hi there welcome my profile <a href="#"><img width="25px" src="./resources/profile/9cfda6cf-3635-4053-8cd8-05d91b1c0a6f.gif"/></a>
 <picture>
    <source
       align="center"
