@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "label": "",
-  "message": "PNPM 8.12.1",
-  "color": "F69220",
-  "namedLogo": "pnpm"
+    "schemaVersion":  1,
+    "label":  "",
+    "message":  "PNPM 8.15.1",
+    "color":  "F69220",
+    "namedLogo":  "pnpm"
 }
