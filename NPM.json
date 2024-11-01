@@ -1,7 +1,7 @@
 {
-    "schemaVersion":  1,
-    "label":  "",
-    "message":  "NPM 10.8.2",
-    "color":  "CB3837",
-    "namedLogo":  "npm"
+  "schemaVersion": 1,
+  "label": "",
+  "message": "NPM ",
+  "color": "CB3837",
+  "namedLogo": "npm"
 }
