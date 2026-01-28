@@ -52,8 +52,8 @@
 <!-- [![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Yarn.json)](https://www.yarnpkg.com) -->
 <!-- [![](https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=black)](https://www.javascript.com) -->
 
-[![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Node.json)](https://nodejs.org/en)
-[![](https://img.shields.io/badge/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/PNPM.json)](https://pnpm.io)
+[![Node.js](https://img.shields.io/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/Node.json)](https://nodejs.org/en)
+[![PNPM](https://img.shields.io/endpoint?logoColor=white&url=https://raw.githubusercontent.com/Faelayis/Faelayis/metadata/PNPM.json)](https://pnpm.io)
 [![](https://img.shields.io/badge/Rust-black?logo=Rust&logoColor=white)](https://www.rust-lang.org)
 [![](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com)
 [![](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)](https://dotnet.microsoft.com/en-us/languages/csharp)
