@@ -49,6 +49,7 @@ export function securityHeaders(): Record<string, string> {
 		"X-Content-Type-Options": "nosniff",
 		"Referrer-Policy": "no-referrer",
 		"Cross-Origin-Resource-Policy": "same-site",
+		Vary: "Origin",
 	};
 }
 
