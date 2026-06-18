@@ -11,6 +11,78 @@
 
 	const isActive = (item: PartOfWorkItem) => item.end.trim().toLowerCase() === "present";
 	const startYear = (item: PartOfWorkItem) => item.start.trim();
+
+	function tiltEntry(node: HTMLElement): { destroy: () => void } {
+		if (typeof window === "undefined") return { destroy: () => {} };
+		const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+		const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+		if (!finePointer || reduceMotion) return { destroy: () => {} };
+
+		const mark = node.querySelector<HTMLElement>(".entry-mark");
+		const name = node.querySelector<HTMLElement>(".entry-name");
+		const arrow = node.querySelector<HTMLElement>(".arrow");
+		let rafId: number | null = null;
+
+		function onMove(event: PointerEvent) {
+			const rect = node.getBoundingClientRect();
+			if (event.clientY < rect.top || event.clientY > rect.bottom) return;
+			const pointerXRatio = (event.clientX - rect.left) / Math.max(rect.width, 1) - 0.5;
+			const pointerYRatio = (event.clientY - rect.top) / Math.max(rect.height, 1) - 0.5;
+			if (rafId !== null) return;
+			rafId = requestAnimationFrame(() => {
+				rafId = null;
+				const rotateXDeg = (-pointerYRatio * 14).toFixed(2);
+				const rotateYDeg = (pointerXRatio * 20).toFixed(2);
+				const nameDepth = (Math.abs(pointerXRatio) * 14 + 8).toFixed(2);
+				const arrowDepth = (Math.abs(pointerXRatio) * 22 + 16).toFixed(2);
+				if (mark) {
+					mark.style.transition = "none";
+					mark.style.transform = `perspective(500px) rotateX(${rotateXDeg}deg) rotateY(${rotateYDeg}deg)`;
+				}
+				if (name) {
+					name.style.transition = "none";
+					name.style.translate = "0 0";
+					name.style.transform = `perspective(500px) translateZ(${nameDepth}px)`;
+				}
+				if (arrow) {
+					arrow.style.transition = "none";
+					arrow.style.translate = "0 0";
+					arrow.style.transform = `perspective(500px) translateZ(${arrowDepth}px)`;
+				}
+			});
+		}
+
+		function onLeave() {
+			if (rafId !== null) {
+				cancelAnimationFrame(rafId);
+				rafId = null;
+			}
+			if (mark) {
+				mark.style.transition = "";
+				mark.style.transform = "";
+			}
+			if (name) {
+				name.style.transition = "";
+				name.style.translate = "";
+				name.style.transform = "";
+			}
+			if (arrow) {
+				arrow.style.transition = "";
+				arrow.style.translate = "";
+				arrow.style.transform = "";
+			}
+		}
+
+		node.addEventListener("pointermove", onMove, { passive: true });
+		node.addEventListener("pointerleave", onLeave, { passive: true });
+		return {
+			destroy() {
+				node.removeEventListener("pointermove", onMove);
+				node.removeEventListener("pointerleave", onLeave);
+				if (rafId !== null) cancelAnimationFrame(rafId);
+			},
+		};
+	}
 </script>
 
 <section id="part-of-work" class="part-of-work">
@@ -35,6 +107,7 @@
 							delay: index * 60,
 							ease: "out(3)",
 						}}
+						use:tiltEntry
 					>
 						{#snippet mark()}
 							<div class="entry-mark" aria-hidden="true">
@@ -52,7 +125,7 @@
 								<span class="num mono">0{partOfWork.length - index}</span>
 								<span class="status" class:active>
 									<span class="pulse"></span>
-									{active ? "Active" : "Shipped"}
+									{active ? "Active" : "Past"}
 								</span>
 							</div>
 						{/snippet}
@@ -192,10 +265,13 @@
 		background: var(--bg-elev);
 		border: 1px solid var(--line);
 		border-radius: 10px;
-		overflow: hidden;
 		transition:
 			border-color var(--duration-base) var(--easing-soft),
-			background var(--duration-base) var(--easing-soft);
+			background var(--duration-base) var(--easing-soft),
+			transform 320ms var(--easing-soft);
+	}
+	.entry-mark img {
+		border-radius: 10px;
 	}
 	.entry-mark img {
 		width: 100%;
@@ -204,7 +280,7 @@
 		display: block;
 	}
 	.entry.is-active .entry-mark {
-		color: var(--accent);
+		color: var(--ink);
 	}
 	a.entry-link:hover .entry-mark {
 		border-color: var(--ink-faint);
@@ -250,8 +326,8 @@
 		border-radius: 999px;
 	}
 	.status.active {
-		color: var(--accent);
-		border-color: var(--accent);
+		color: var(--ink-2);
+		border-color: var(--ink-faint);
 	}
 	.pulse {
 		width: 6px;
@@ -266,9 +342,10 @@
 		font-weight: 500;
 		letter-spacing: var(--ls-tight);
 		line-height: 1.1;
+		transition: transform 320ms var(--easing-soft);
 	}
 	.entry.is-active .entry-name {
-		color: var(--accent);
+		color: var(--ink);
 	}
 	.role {
 		font-family: var(--font-body);
@@ -319,19 +396,20 @@
 		font-size: 1.05rem;
 		color: var(--ink-2);
 		opacity: 0;
-		transform: translate(-4px, 4px);
+		translate: -4px 4px;
 		transition:
 			opacity 280ms var(--easing-soft),
+			translate 280ms var(--easing-soft),
 			transform 280ms var(--easing-soft),
 			color 280ms var(--easing-soft);
 	}
 	a.entry-link:hover .arrow {
 		opacity: 1;
-		transform: translate(0, 0);
-		color: var(--accent);
+		translate: 0 0;
+		color: var(--ink-2);
 	}
 	.entry.is-active .arrow {
-		color: var(--accent);
+		color: var(--ink-2);
 	}
 
 	@media (max-width: 620px) {

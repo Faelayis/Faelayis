@@ -12,6 +12,9 @@
 		createdAt: string;
 		topics: string[];
 		primaryLanguage: { name: string; color?: string | null } | null;
+		stargazerCount: number;
+		isArchived: boolean;
+		pushedAt: string;
 	}
 
 	interface Props {
@@ -28,6 +31,16 @@
 	const visibleProjects = $derived(expanded ? sideProjects : sideProjects.slice(0, INITIAL_VISIBLE));
 	const hiddenCount = $derived(Math.max(0, sideProjects.length - INITIAL_VISIBLE));
 	const canToggle = $derived(sideProjects.length > INITIAL_VISIBLE);
+
+	function updatedLabel(project: SideProject): string {
+		const createdYear = new Date(project.createdAt).getFullYear();
+		const pushedDate = new Date(project.pushedAt);
+		const pushedYear = pushedDate.getFullYear();
+		if (pushedYear === createdYear) {
+			return `Updated ${pushedDate.toLocaleDateString("en-US", { month: "short", day: "numeric" })}`;
+		}
+		return `Updated ${pushedDate.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}`;
+	}
 </script>
 
 <section id="side-projects" class="side-projects">
@@ -58,7 +71,19 @@
 							aria-label={prettify(sideProject.name)}
 							data-cursor="View"
 						>
-							<span class="num">{String(index + 1).padStart(2, "0")}</span>
+							<span class="num-row">
+								<span class="num">{String(index + 1).padStart(2, "0")}</span>
+								{#if sideProject.isArchived}
+									<span class="archive">
+										<svg class="archive-icon" viewBox="0 0 24 24" width="11" height="11" aria-hidden="true">
+											<path d="M3 4h18v3H3V4zm1 5h16v11H4V9zm5 2v2h6v-2H9z" fill="currentColor" />
+										</svg>
+									</span>
+								{/if}
+								<span class="updated-date">
+									{updatedLabel(sideProject)}
+								</span>
+							</span>
 							<h3 class="name">{prettify(sideProject.name)}</h3>
 							<div class="meta">
 								{#if sideProject.primaryLanguage}
@@ -70,8 +95,19 @@
 										{sideProject.primaryLanguage.name}
 									</span>
 								{/if}
-								<span class="year">{new Date(sideProject.createdAt).getFullYear()}</span>
+								<span class="year-row">
+									<span class="created-label">Created</span>
+									<span class="year">{new Date(sideProject.createdAt).getFullYear()}</span>
+								</span>
 							</div>
+							{#if sideProject.stargazerCount > 0}
+								<span class="stars" title="{sideProject.stargazerCount} star{sideProject.stargazerCount === 1 ? '' : 's'} on GitHub">
+									<svg class="star-icon" viewBox="0 0 24 24" width="11" height="11" aria-hidden="true">
+										<path d="M12 2.5l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 18.9 5.9 21.1l1.4-6.8L2.2 9.6l6.9-.8z" fill="currentColor" />
+									</svg>
+									{sideProject.stargazerCount}
+								</span>
+							{/if}
 							<span class="arrow" aria-hidden="true">↗</span>
 						</a>
 					</li>
@@ -173,7 +209,9 @@
 			transform: translateY(0);
 		}
 	}
-	.cell:hover {
+	.cell:hover,
+	.cell:active,
+	.cell:focus-within {
 		background: var(--bg-elev);
 	}
 	.cell-link {
@@ -222,9 +260,110 @@
 		border-radius: 50%;
 		flex-shrink: 0;
 	}
-	.year {
+	.num-row {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+	}
+	.stars {
+		position: absolute;
+		top: 1.15rem;
+		right: 1.25rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		color: var(--ink-2);
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		opacity: 0.85;
+		transition:
+			color 240ms var(--easing-soft),
+			opacity 240ms var(--easing-soft);
+	}
+	.star-icon {
+		color: oklch(82% 0.17 88);
+		flex-shrink: 0;
+	}
+	.archive {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		color: var(--ink-2);
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		opacity: 0.8;
+		transition:
+			color 240ms var(--easing-soft),
+			opacity 240ms var(--easing-soft);
+	}
+	.archive-icon {
+		color: oklch(72% 0.13 65);
+		flex-shrink: 0;
+	}
+	.updated-date {
+		opacity: 0;
+		max-width: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		color: var(--ink-2);
+		transition:
+			opacity 240ms var(--easing-soft),
+			max-width 320ms var(--easing-soft);
+	}
+	.year-row {
+		display: inline-flex;
+		align-items: center;
+		gap: 0;
 		flex-shrink: 0;
 		margin-left: auto;
+	}
+	.created-label {
+		opacity: 0;
+		max-width: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		font: inherit;
+		color: var(--ink-2);
+		transition:
+			opacity 240ms var(--easing-soft),
+			max-width 320ms var(--easing-soft),
+			margin-right 320ms var(--easing-soft);
+	}
+	.cell:hover .archive,
+	.cell:active .archive,
+	.cell:focus-within .archive {
+		color: var(--ink);
+		opacity: 1;
+	}
+	.cell:hover .updated-date,
+	.cell:active .updated-date,
+	.cell:focus-within .updated-date {
+		opacity: 0.75;
+		max-width: 24ch;
+	}
+	.cell:hover .created-label,
+	.cell:active .created-label,
+	.cell:focus-within .created-label {
+		opacity: 0.75;
+		max-width: 8ch;
+		margin-right: 0.4rem;
+	}
+	@media (hover: none) {
+		.cell .updated-date,
+		.cell .created-label {
+			transition-duration: 180ms;
+		}
+	}
+	.cell:hover .stars,
+	.cell:active .stars,
+	.cell:focus-within .stars {
+		opacity: 0;
+	}
+	.year {
+		flex-shrink: 0;
 	}
 	.arrow {
 		position: absolute;
@@ -238,7 +377,9 @@
 			transform 240ms var(--easing-soft);
 		font-size: 0.95rem;
 	}
-	.cell:hover .arrow {
+	.cell:hover .arrow,
+	.cell:active .arrow,
+	.cell:focus-within .arrow {
 		opacity: 1;
 		transform: translate(0, 0);
 	}
