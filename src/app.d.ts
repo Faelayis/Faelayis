@@ -6,6 +6,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface ImportMetaEnv {
+		readonly BUILD_TARGET: string;
+	}
 }
 
 export {};

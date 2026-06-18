@@ -31,6 +31,7 @@
 	},
 	"dependencies": {
 		"@octokit/graphql": "9.0.3",
+		"@vercel/analytics": "2.0.1",
 		"animejs": "4.4.1",
 		"simple-icons": "16.23.0"
 	}
