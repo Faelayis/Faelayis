@@ -1,5 +1,6 @@
 import type { SimpleIcon } from "simple-icons";
 
-export type TechItem = Omit<SimpleIcon, "title" | "svg" | "source" | "guidelines" | "license"> & {
+export interface TechItem {
 	name: string;
-};
+	icon?: SimpleIcon;
+}

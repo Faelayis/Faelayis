@@ -6,11 +6,6 @@ export interface ResolvedIcon extends SimpleIcon {
 	slug: string;
 }
 
-export interface IconLookupResult {
-	icon: ResolvedIcon | null;
-	slug: string | null;
-}
-
 export interface RenderedTechItem {
 	name: string;
 	slug: string;

@@ -1,6 +1,9 @@
+import type { SimpleIcon } from "simple-icons";
+
 export interface Social {
 	label: string;
 	url: string;
+	icon?: SimpleIcon;
 }
 
 export interface PersonalInfo {

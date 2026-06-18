@@ -215,6 +215,6 @@ select {
 	transition: transform 900ms var(--easing-soft);
 	pointer-events: none;
 }
-.section-head:global(.in)::after {
+.section-head.in::after {
 	transform: scaleX(1);
 }

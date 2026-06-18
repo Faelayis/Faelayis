@@ -4,19 +4,15 @@
 	import { FRAMEWORKS } from "$data/tech/frameworks";
 	import { TOOLS } from "$data/tech/tools";
 	import { LANGUAGES } from "$data/tech/languages";
+	import { slugify } from "$utils/text";
 	import type { RenderedTechItem, ResolvedIcon } from "$types/icons";
 	import type { TechItem } from "$types/data/tech/types";
 
 	function toRenderedItem(item: TechItem): RenderedTechItem {
-		const icon: ResolvedIcon = {
-			title: item.name,
-			slug: item.slug,
-			hex: item.hex,
-			path: item.path,
-			svg: "",
-			source: "",
-		};
-		return { name: item.name, slug: item.slug, percent: 0, totalSeconds: 0, icon };
+		const ic = item.icon;
+		const icon: ResolvedIcon | null = ic ? { title: item.name, slug: ic.slug, hex: ic.hex, path: ic.path, svg: "", source: "" } : null;
+		const slug = ic?.slug ?? slugify(item.name);
+		return { name: item.name, slug, percent: 0, totalSeconds: 0, icon };
 	}
 
 	const languageSkills: RenderedTechItem[] = $derived(dedupeBySlug(LANGUAGES.map(toRenderedItem)));

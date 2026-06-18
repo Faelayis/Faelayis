@@ -5,3 +5,10 @@ export function prettify(name: string): string {
 export function prettifyTag(tag: string): string {
 	return tag.replace(/[-_]/g, " ");
 }
+
+export function slugify(name: string): string {
+	return name
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, "-")
+		.replace(/^-+|-+$/g, "");
+}

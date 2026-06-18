@@ -4,8 +4,6 @@
 	import { revealTitle, revealHint, revealMeta, revealTiltY } from "$utils/reveal-presets";
 	import { copyToClipboard } from "$utils/browser";
 	import { magnetic } from "$actions/magnetic";
-	import { iconFor, resolveIcon } from "$icons/simple-icons";
-	import type { ResolvedIcon } from "$icons/simple-icons";
 	import type { Social } from "$types/data/personal-info";
 
 	interface Props {
@@ -17,23 +15,6 @@
 
 	let copied = $state(false);
 	let emailBtnEl: HTMLElement | null = $state(null);
-
-	const ICON_SLUG_OVERRIDES: Record<string, string> = {
-		GitHub: "github",
-		Twitter: "x",
-		Discord: "discord",
-		Telegram: "telegram",
-	};
-
-	function getIcon(label: string): ResolvedIcon | null {
-		const override = ICON_SLUG_OVERRIDES[label];
-		if (override) {
-			const matched = iconFor(override);
-			if (matched) return matched;
-		}
-		const fallback = resolveIcon(label);
-		return fallback.icon;
-	}
 
 	async function copyEmail() {
 		await copyToClipboard(email);
@@ -76,7 +57,6 @@
 
 		<div class="cards">
 			{#each socials as social, index (social.url)}
-				{@const icon = getIcon(social.label)}
 				<a
 					href={social.url}
 					target="_blank"
@@ -90,9 +70,9 @@
 					use:magnetic={{ strength: 0.2, range: 1.4 }}
 				>
 					<span class="card-label mono">{social.label}</span>
-					{#if icon}
-						<svg class="card-icon" viewBox="0 0 24 24" width="42" height="42" fill="#{icon.hex}" aria-hidden="true">
-							<path d={icon.path} />
+					{#if social.icon}
+						<svg class="card-icon" viewBox="0 0 24 24" width="42" height="42" fill="#{social.icon.hex}" aria-hidden="true">
+							<path d={social.icon.path} />
 						</svg>
 					{:else}
 						<span class="card-icon-fallback">{social.label.charAt(0)}</span>
