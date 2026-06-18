@@ -38,7 +38,7 @@ jobs:
       runs-on: ubuntu-latest
       env:
          BUILD_TARGET: vercel
-         SITE_URL: https://faelayis.github.io/
+         SITE_URL: https://faelayis.github.io/Faelayis
       steps:
          - name: Checkout
            uses: actions/checkout@v4
@@ -101,7 +101,7 @@ jobs:
       runs-on: ubuntu-latest
       env:
          BUILD_TARGET: static
-         SITE_URL: ""
+         SITE_URL: https://faelayis.vercel.app
       steps:
          - name: Checkout
            uses: actions/checkout@v4
