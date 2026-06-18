@@ -2,7 +2,7 @@
 	import { onMount } from "svelte";
 	import { scroll } from "$utils/scroll.svelte";
 	import { magnetic } from "$actions/magnetic";
-	import { heroNavProgress } from "$utils/hero-nav.svelte";
+	import { heroNavProgress, smoothstep } from "$utils/hero-nav.svelte";
 	import { prefersReducedMotion } from "$utils/browser";
 
 	const navItems = [
@@ -13,43 +13,14 @@
 	];
 
 	let navEl: HTMLElement | null = $state(null);
-	let brandWrapEl: HTMLElement | null = $state(null);
-	let brandEl: HTMLElement | null = $state(null);
+	let brandInnerEl: HTMLElement | null = $state(null);
 	let navItemEls: (HTMLElement | null)[] = $state([null, null, null, null, null]);
 	let indicatorEl: HTMLElement | null = $state(null);
 	let indicatorStyle = $state({ left: "0px", width: "0px", opacity: 0 });
 
-	let startTX = $state(0);
-	let startTY = $state(0);
-	let startScale = $state(1);
-	let measured = $state(false);
-
 	onMount(() => {
 		scroll.start();
-
-		const measure = () => {
-			const heroName = document.querySelector<HTMLElement>(".hero .name");
-			if (heroName && brandEl) {
-				const heroRect = heroName.getBoundingClientRect();
-				const brandRect = brandEl.getBoundingClientRect();
-				startTX = heroRect.left + heroRect.width / 2 - brandRect.left - brandRect.width / 2;
-				startTY = heroRect.top + heroRect.height / 2 - brandRect.top - brandRect.height / 2;
-				startScale = heroRect.height / Math.max(brandRect.height, 1);
-				measured = true;
-			}
-		};
-
-		measure();
-		if (!measured) requestAnimationFrame(measure);
-		if (!measured) setTimeout(measure, 50);
-		if (!measured) setTimeout(measure, 200);
-
-		window.addEventListener("resize", measure);
-
-		return () => {
-			scroll.stop();
-			window.removeEventListener("resize", measure);
-		};
+		return () => scroll.stop();
 	});
 
 	$effect(() => {
@@ -66,40 +37,21 @@
 	});
 
 	$effect(() => {
-		if (!brandEl) return;
+		if (!brandInnerEl) return;
 		const y = scroll.scrollY;
 		const { e } = heroNavProgress(y);
-
-		let tx: number, ty: number, s: number, o: number;
-
-		if (measured) {
-			tx = startTX * (1 - e);
-			ty = startTY * (1 - e);
-			s = startScale + (1 - startScale) * e;
-			o = e;
-		} else {
-			tx = 0;
-			ty = 0;
-			s = 1;
-			o = 0;
-		}
-
 		if (prefersReducedMotion()) {
-			tx = 0;
-			ty = 0;
-			s = 1;
-			o = y > 80 ? 1 : 0;
+			brandInnerEl.style.opacity = y > 80 ? "1" : "0";
+			return;
 		}
-
-		brandEl.style.opacity = String(o);
-		brandEl.style.transform = `translate3d(${tx.toFixed(2)}px, ${ty.toFixed(2)}px, 0) scale(${s.toFixed(3)})`;
+		brandInnerEl.style.opacity = String(smoothstep(0.5, 0.9, e));
 	});
 </script>
 
 <header class="nav" class:scrolled={scroll.scrollY > 12} class:shrink={scroll.scrollY > 80}>
 	<div class="wrap row" bind:this={navEl}>
 		<span class="brand-mag" use:magnetic={{ strength: 0.4, range: 1.2 }}>
-			<a href="#top" class="brand" bind:this={brandEl}>Faelayis</a>
+			<a href="#top" class="brand"><span class="brand-inner" bind:this={brandInnerEl}>Faelayis</span></a>
 		</span>
 		<nav class="nav-items" aria-label="Primary">
 			{#each navItems as navItem, i}
@@ -158,13 +110,16 @@
 	.brand {
 		font-family: var(--font-display);
 		font-size: 1.05rem;
-		font-weight: 500;
-		letter-spacing: -0.02em;
+		font-weight: 400;
+		letter-spacing: -0.04em;
+		line-height: 0.92;
+		display: inline-block;
+		transition: font-size var(--duration-base) var(--easing-soft);
+	}
+	.brand-inner {
 		display: inline-block;
 		opacity: 0;
-		transform-origin: center;
-		will-change: transform, opacity;
-		transition: font-size var(--duration-base) var(--easing-soft);
+		will-change: opacity;
 	}
 	.nav.shrink .brand {
 		font-size: 0.95rem;
