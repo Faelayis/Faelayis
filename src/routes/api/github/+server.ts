@@ -33,8 +33,7 @@ export const GET: RequestHandler = async ({ url, request, getClientAddress }) =>
 		);
 	}
 
-	const rawLogin = url.searchParams.get("login") || privateEnv.GITHUB_USERNAME;
-	const login = (rawLogin ?? "").trim();
+	const login = (privateEnv.GITHUB_USERNAME ?? "").trim();
 	if (!USERNAME_RE.test(login)) {
 		return json({ error: "Invalid login" }, { status: 400, headers });
 	}
