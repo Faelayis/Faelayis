@@ -199,6 +199,11 @@ select {
 	border: 0;
 }
 
+.scramble-ch {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
 .section-head {
 	position: relative;
 }

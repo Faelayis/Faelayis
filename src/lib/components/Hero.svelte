@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { animate, splitText, stagger } from "animejs";
+	import { animate } from "animejs";
 	import { scroll } from "$utils/scroll.svelte";
 	import { prefersReducedMotion } from "$utils/browser";
 	import { heroNavProgress, smoothstep, easeInOutCubic } from "$utils/hero-nav.svelte";
+	import { scrambleText } from "$utils/scramble";
 
 	interface Props {
 		name: string;
@@ -60,6 +61,16 @@
 		leave: () => {},
 	};
 
+	function handleNameCharSettle(_i: number, el: HTMLSpanElement, _ch: string): void {
+		animate(el, {
+			opacity: [0, 1],
+			translateY: [40, 0],
+			rotateX: [-86, 0],
+			duration: 1100,
+			ease: "out(4)",
+		});
+	}
+
 	onMount(() => {
 		const reduceMotion = prefersReducedMotion();
 
@@ -72,14 +83,16 @@
 				if (!tiltActive || !nameTiltEl) return;
 				const rect = nameTiltEl.getBoundingClientRect();
 				if (rect.bottom < 0 || rect.top > window.innerHeight) return;
-				const pointerXRatio = (event.clientX - rect.left) / Math.max(rect.width, 1) - 0.5;
-				const pointerYRatio = (event.clientY - rect.top) / Math.max(rect.height, 1) - 0.5;
+				const rawX = (event.clientX - rect.left) / Math.max(rect.width, 1) - 0.5;
+				const rawY = (event.clientY - rect.top) / Math.max(rect.height, 1) - 0.5;
+				const pointerXRatio = Math.max(-0.5, Math.min(0.5, rawX));
+				const pointerYRatio = Math.max(-0.5, Math.min(0.5, rawY));
 				if (tiltRAF !== null) return;
 				tiltRAF = requestAnimationFrame(() => {
 					tiltRAF = null;
 					if (!nameTiltEl) return;
-					const rotateXDeg = (-pointerYRatio * 9).toFixed(2);
-					const rotateYDeg = (pointerXRatio * 12).toFixed(2);
+					const rotateXDeg = (-pointerYRatio * 18).toFixed(2);
+					const rotateYDeg = (pointerXRatio * 26).toFixed(2);
 					nameTiltEl.style.transform = `rotateX(${rotateXDeg}deg) rotateY(${rotateYDeg}deg)`;
 				});
 			};
@@ -94,21 +107,6 @@
 			};
 			window.addEventListener("pointermove", tiltHandlers.move, { passive: true });
 			window.addEventListener("pointerout", tiltHandlers.leave, { passive: true });
-		}
-
-		if (heroNameEl && !reduceMotion) {
-			const splitter = splitText(heroNameEl, {
-				chars: { class: "hero-char" },
-				includeSpaces: true,
-			});
-			animate(splitter.chars, {
-				opacity: [0, 1],
-				translateY: [40, 0],
-				rotateX: [-86, 0],
-				duration: 1100,
-				delay: stagger(46),
-				ease: "out(4)",
-			});
 		}
 
 		measureHero();
@@ -174,11 +172,17 @@
 
 <section id="top" class="hero">
 	<div class="wrap">
-		<p class="meta">{handle} — {role}, {location}</p>
+		<p class="meta" use:scrambleText={{ speed: 18, settleDelay: 10, settleDuration: 240 }}>{handle} — {role}, {location}</p>
 		<div class="name-tilt" bind:this={nameTiltEl}>
-			<h1 class="name" bind:this={heroNameEl}>{name}</h1>
+			<h1
+				class="name"
+				bind:this={heroNameEl}
+				use:scrambleText={{ speed: 24, settleDelay: 90, settleDuration: 360, charClass: "hero-char", onCharSettle: handleNameCharSettle }}
+			>
+				{name}
+			</h1>
 		</div>
-		<p class="bio hero-bio">{bio}</p>
+		<p class="bio hero-bio" use:scrambleText={{ speed: 18, settleDelay: 8, settleDuration: 220 }}>{bio}</p>
 	</div>
 </section>
 
