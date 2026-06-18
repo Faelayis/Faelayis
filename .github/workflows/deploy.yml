@@ -26,7 +26,6 @@ env:
    WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
    GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
    WAKATIME_USERNAME: ${{ secrets.WAKATIME_USERNAME }}
-   SITE_URL: ${{ secrets.SITE_URL }}
 
 jobs:
    github-pages:
@@ -38,7 +37,7 @@ jobs:
       runs-on: ubuntu-latest
       env:
          BUILD_TARGET: vercel
-         SITE_URL: https://faelayis.github.io/Faelayis
+         SITE_URL: https://faelayis.github.io/faelayis
       steps:
          - name: Checkout
            uses: actions/checkout@v4
