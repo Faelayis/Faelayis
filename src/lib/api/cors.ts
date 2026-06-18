@@ -1,7 +1,7 @@
 import { env as privateEnv } from "$env/dynamic/private";
 import type { RateLimitBucket, RateLimitConfig, RateLimitResult } from "$types/api/cors";
 
-export const ALLOWED_ORIGINS = ["https://faelayis.github.io", "https://portfolio-three-self-60.vercel.app"] as const;
+export const ALLOWED_ORIGINS = ["https://faelayis.github.io", "https://faelayis.vercel.app"] as const;
 
 const VERCEL_PREVIEW = /^https:\/\/[a-z0-9-]+\.vercel\.app$/i;
 
@@ -74,7 +74,7 @@ export function rateLimit(key: string, config: RateLimitConfig): RateLimitResult
 
 export function apiBase(): string {
 	const url = privateEnv.SITE_URL ?? "";
-	if (url.includes("github.io") || !url) return "https://portfolio-three-self-60.vercel.app";
+	if (url.includes("github.io") || !url) return "https://faelayis.vercel.app";
 	return url.replace(/\/$/, "");
 }
 
