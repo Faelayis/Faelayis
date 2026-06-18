@@ -9,6 +9,11 @@
 
 	const FALLBACK_LABELS: Record<string, string> = {
 		top: "Intro",
+		"part-of-work": "Work",
+		"side-projects": "Side Project",
+		"tech-skills": "Skill",
+		about: "About",
+		contact: "Contact",
 	};
 
 	function readEyebrow(section: HTMLElement): string | null {
