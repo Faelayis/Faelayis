@@ -11,6 +11,8 @@ export const projects: ProjectsConfig = {
 	],
 	hidden: [
 		"Faelayis",
+		"faelayis",
+		"me",
 		"MyAnimeList-History",
 		"CMRU-Drink_Shop",
 		"CMRU-GuardianG",

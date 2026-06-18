@@ -7,7 +7,7 @@ export const personalInfo: PersonalInfo = {
 	location: "Chiang Mai, Thailand",
 	email: "faelayis@proton.com",
 	bio: "Full-Stack Developer passionate about building modern web applications, scalable systems, and user-friendly digital experiences. Always learning, always improving.",
-	longBio: "-",
+	longBio: "",
 	socials: [
 		{ label: "GitHub", url: "https://github.com/faelayis" },
 		{ label: "Discord", url: "https://discord.com/users/328731868096888833" },
