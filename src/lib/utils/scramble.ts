@@ -16,7 +16,7 @@ export interface ScrambleAction {
 	destroy(): void;
 }
 
-const DEFAULT_SCRAMBLE_CHARS = "01";
+const DEFAULT_SCRAMBLE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*+-=?";
 const DEFAULT_OBSERVER_OPTIONS: IntersectionObserverInit = {
 	threshold: 0.2,
 	rootMargin: "0px 0px -8% 0px",
@@ -28,7 +28,7 @@ function randomChar(chars: string): string {
 
 export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): ScrambleAction {
 	const {
-		chars = DEFAULT_SCRAMBLE_CHARS,
+		chars,
 		speed = 38,
 		settleDelay = 26,
 		settleDuration = 560,
@@ -41,6 +41,8 @@ export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): 
 
 	const original = node.textContent ?? "";
 	const text = Array.from(original);
+	const fromText = Array.from(new Set(text.filter((c) => c.trim() !== ""))).join("");
+	const scramblePool = chars || fromText || DEFAULT_SCRAMBLE_CHARS;
 
 	node.setAttribute("aria-label", original);
 	node.classList.add("scramble");
@@ -88,7 +90,7 @@ export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): 
 	function setScrambled(): void {
 		for (let i = 0; i < spans.length; i++) {
 			if (!scramblable[i]) continue;
-			spans[i].textContent = randomChar(chars);
+			spans[i].textContent = randomChar(scramblePool);
 		}
 	}
 
@@ -122,7 +124,7 @@ export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): 
 				allDone = false;
 				if (t - lastUpdates[i] >= speed) {
 					lastUpdates[i] = t;
-					spans[i].textContent = randomChar(chars);
+					spans[i].textContent = randomChar(scramblePool);
 				}
 			}
 			if (allDone) {
