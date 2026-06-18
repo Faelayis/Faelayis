@@ -6,17 +6,24 @@ export const ALLOWED_ORIGINS = ["https://faelayis.github.io", "https://faelayis.
 const VERCEL_PREVIEW = /^https:\/\/[a-z0-9-]+\.vercel\.app$/i;
 const LOCALHOST = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i;
 
-export function isAllowedOrigin(origin: string | null): boolean {
-	if (!origin) return import.meta.env.DEV;
-	if ((ALLOWED_ORIGINS as readonly string[]).includes(origin)) return true;
-	if (VERCEL_PREVIEW.test(origin)) return true;
-	if (LOCALHOST.test(origin)) return true;
+export function isAllowedOrigin(request: Request): boolean {
+	const origin = request.headers.get("origin");
+	if (origin) {
+		if ((ALLOWED_ORIGINS as readonly string[]).includes(origin)) return true;
+		if (VERCEL_PREVIEW.test(origin)) return true;
+		if (LOCALHOST.test(origin)) return true;
+		return false;
+	}
+	const fetchSite = request.headers.get("sec-fetch-site");
+	if (fetchSite === "same-origin" || fetchSite === "none") return true;
+	if (fetchSite === null) return import.meta.env.DEV;
 	return false;
 }
 
-export function corsHeadersFor(origin: string | null): Record<string, string> | null {
+export function corsHeadersFor(request: Request): Record<string, string> | null {
+	const origin = request.headers.get("origin");
 	if (!origin) return null;
-	if (!isAllowedOrigin(origin)) return null;
+	if (!isAllowedOrigin(request)) return null;
 	return {
 		"Access-Control-Allow-Origin": origin,
 		"Access-Control-Allow-Methods": "GET, OPTIONS",
@@ -27,11 +34,10 @@ export function corsHeadersFor(origin: string | null): Record<string, string> | 
 }
 
 export function handleCorsPreflight({ request }: { request: Request }): Response {
-	const origin = request.headers.get("origin");
-	if (!origin || !isAllowedOrigin(origin)) {
+	if (!isAllowedOrigin(request)) {
 		return new Response("Forbidden", { status: 403 });
 	}
-	const headers = corsHeadersFor(origin);
+	const headers = corsHeadersFor(request);
 	return new Response(null, {
 		status: 204,
 		headers: headers ?? {},

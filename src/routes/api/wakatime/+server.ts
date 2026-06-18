@@ -14,11 +14,10 @@ const UPSTREAM_TIMEOUT_MS = 8000;
 export const OPTIONS: RequestHandler = handleCorsPreflight;
 
 export const GET: RequestHandler = async ({ url, request, getClientAddress }) => {
-	const origin = request.headers.get("origin");
-	const cors = corsHeadersFor(origin);
+	const cors = corsHeadersFor(request);
 	const headers = { ...(cors ?? {}), ...securityHeaders() };
 
-	if (!isAllowedOrigin(origin)) {
+	if (!isAllowedOrigin(request)) {
 		return json({ error: "Forbidden" }, { status: 403, headers });
 	}
 

@@ -14,11 +14,10 @@ const MAX_REPOS = 100;
 export const OPTIONS: RequestHandler = handleCorsPreflight;
 
 export const GET: RequestHandler = async ({ request, getClientAddress }) => {
-	const origin = request.headers.get("origin");
-	const cors = corsHeadersFor(origin);
+	const cors = corsHeadersFor(request);
 	const headers = { ...(cors ?? {}), ...securityHeaders() };
 
-	if (!isAllowedOrigin(origin)) {
+	if (!isAllowedOrigin(request)) {
 		return json({ error: "Forbidden" }, { status: 403, headers });
 	}
 
