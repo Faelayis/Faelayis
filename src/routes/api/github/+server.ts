@@ -22,13 +22,13 @@ export const GET: RequestHandler = async ({ url, request, getClientAddress }) =>
 	}
 
 	const ip = getClientAddress();
-	const rl = rateLimit(`gh:${ip}`, RATE_LIMIT);
-	if (!rl.ok) {
+	const rateLimitResult = rateLimit(`gh:${ip}`, RATE_LIMIT);
+	if (!rateLimitResult.ok) {
 		return json(
 			{ error: "Too Many Requests" },
 			{
 				status: 429,
-				headers: { ...headers, "Retry-After": String(rl.retryAfter) },
+				headers: { ...headers, "Retry-After": String(rateLimitResult.retryAfter) },
 			},
 		);
 	}
@@ -44,16 +44,16 @@ export const GET: RequestHandler = async ({ url, request, getClientAddress }) =>
 
 	const withReadme = url.searchParams.get("readme") === "1";
 
-	const ac = new AbortController();
-	const timeout = setTimeout(() => ac.abort(), UPSTREAM_TIMEOUT_MS);
+	const abortController = new AbortController();
+	const timeout = setTimeout(() => abortController.abort(), UPSTREAM_TIMEOUT_MS);
 
 	try {
-		const { user, repos } = await fetchGitHubRepos(login, privateEnv.GITHUB_TOKEN, first, ac.signal);
+		const { user, repos } = await fetchGitHubRepos(login, privateEnv.GITHUB_TOKEN, first, abortController.signal);
 		if (withReadme) {
 			await Promise.all(
-				repos.slice(0, 6).map(async (r) => {
-					const [owner, name] = r.nameWithOwner.split("/");
-					r.readmeCleaned = await fetchReadme(owner, name, privateEnv.GITHUB_TOKEN, ac.signal);
+				repos.slice(0, 6).map(async (repo) => {
+					const [owner, name] = repo.nameWithOwner.split("/");
+					repo.readmeCleaned = await fetchReadme(owner, name, privateEnv.GITHUB_TOKEN, abortController.signal);
 				}),
 			);
 		}

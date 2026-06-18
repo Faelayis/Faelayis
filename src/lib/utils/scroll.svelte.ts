@@ -17,20 +17,20 @@ export function createScrollState(): ScrollState {
 
 	function tick(): void {
 		animationFrame = null;
-		const y = window.scrollY;
+		const currentScrollY = window.scrollY;
 		const max = document.documentElement.scrollHeight - window.innerHeight;
 		const timestamp = performance.now();
 		const deltaTime = Math.max(1, timestamp - lastTimestamp);
-		const deltaY = y - lastY;
+		const deltaY = currentScrollY - lastY;
 
-		scrollY = y;
-		scrollProgress = max > 0 ? Math.min(1, y / max) : 0;
+		scrollY = currentScrollY;
+		scrollProgress = max > 0 ? Math.min(1, currentScrollY / max) : 0;
 
 		const instant = deltaY / deltaTime;
 		velocitySmoothed = velocitySmoothed * 0.86 + instant * 0.14;
 		velocity = velocitySmoothed;
 
-		lastY = y;
+		lastY = currentScrollY;
 		lastTimestamp = timestamp;
 	}
 

@@ -7,18 +7,18 @@ export function getHeroNavRange(): number {
 	return window.innerWidth < COMPACT_BREAKPOINT ? HERO_NAV_RANGE_COMPACT : HERO_NAV_RANGE;
 }
 
-export function smoothstep(a: number, b: number, x: number): number {
-	const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
-	return t * t * (3 - 2 * t);
+export function smoothstep(edgeA: number, edgeB: number, value: number): number {
+	const clamped = Math.min(1, Math.max(0, (value - edgeA) / (edgeB - edgeA)));
+	return clamped * clamped * (3 - 2 * clamped);
 }
 
-export function easeInOutCubic(t: number): number {
-	const x = Math.min(1, Math.max(0, t));
-	return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+export function easeInOutCubic(progress: number): number {
+	const clamped = Math.min(1, Math.max(0, progress));
+	return clamped < 0.5 ? 4 * clamped * clamped * clamped : 1 - Math.pow(-2 * clamped + 2, 3) / 2;
 }
 
 export function heroNavProgress(scrollY: number) {
 	const range = getHeroNavRange();
-	const p = Math.min(1, Math.max(0, scrollY / range));
-	return { p, e: easeInOutCubic(p) };
+	const progress = Math.min(1, Math.max(0, scrollY / range));
+	return { progress, easedProgress: easeInOutCubic(progress) };
 }

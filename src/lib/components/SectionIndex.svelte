@@ -46,14 +46,14 @@
 {#if items.length}
 	<nav class="index" aria-label="Section index">
 		<ol>
-			{#each items as item, i (item.id)}
+			{#each items as item, index (item.id)}
 				<li>
 					<a
 						href="#{item.id}"
 						class:active={scroll.activeSection === item.id}
 						aria-current={scroll.activeSection === item.id ? "true" : undefined}
 					>
-						<span class="num">{String(i + 1).padStart(2, "0")}</span>
+						<span class="num">{String(index + 1).padStart(2, "0")}</span>
 						<span class="lbl">{item.label}</span>
 						<span class="dot" aria-hidden="true"></span>
 					</a>

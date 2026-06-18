@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { revealOnView } from "$utils/anime";
-	import { revealTitle, revealHint, revealMeta } from "$utils/reveal-presets";
+	import { revealHint, revealMeta, revealTiltX } from "$utils/reveal-presets";
 
 	interface Props {
 		role: string;
@@ -13,7 +13,9 @@
 
 <section id="about" class="about">
 	<div class="wrap">
-		<h2 class="section-title" use:revealOnView={revealTitle}>About</h2>
+		<div class="title-3d">
+			<h2 class="section-title" use:revealOnView={revealTiltX}>About</h2>
+		</div>
 		<p class="bio" use:revealOnView={revealHint}>{longBio}</p>
 		<p class="meta-line" use:revealOnView={revealMeta}>{role} · {location}</p>
 	</div>
@@ -24,12 +26,19 @@
 		padding-block: clamp(3rem, 6vw, 5rem);
 		border-top: 1px solid var(--line);
 	}
+	.title-3d {
+		perspective: 900px;
+		perspective-origin: 50% 100%;
+		margin-bottom: 1.5rem;
+	}
 	.section-title {
 		font-family: var(--font-display);
 		font-size: clamp(1.4rem, 1.1rem + 1vw, 1.85rem);
 		font-weight: 500;
 		letter-spacing: -0.02em;
-		margin-bottom: 1.5rem;
+		transform-style: preserve-3d;
+		transform-origin: bottom center;
+		backface-visibility: hidden;
 	}
 	.bio {
 		font-size: clamp(1rem, 0.95rem + 0.4vw, 1.15rem);

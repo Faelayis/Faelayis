@@ -80,7 +80,7 @@ export function apiBase(): string {
 
 export async function fetchApi<T>(path: string, init?: RequestInit): Promise<T> {
 	const headers: HeadersInit = { Accept: "application/json", ...(init?.headers ?? {}) };
-	const res = await fetch(`${apiBase()}${path}`, { ...init, headers });
-	if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
-	return (await res.json()) as T;
+	const response = await fetch(`${apiBase()}${path}`, { ...init, headers });
+	if (!response.ok) throw new Error(`API ${response.status}: ${await response.text()}`);
+	return (await response.json()) as T;
 }

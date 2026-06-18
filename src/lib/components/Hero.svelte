@@ -18,8 +18,12 @@
 	let heroNameEl: HTMLElement | null = $state(null);
 	let heroLeft = $state(0);
 	let heroDocTop = $state(0);
-	let heroH = $state(0);
+	let heroHeight = $state(0);
 	let measured = $state(false);
+
+	let nameTiltEl: HTMLElement | null = $state(null);
+	let tiltRAF: number | null = null;
+	let tiltActive = false;
 
 	let brandInnerEl: HTMLElement | null = null;
 	let resizeRAF: number | null = null;
@@ -29,7 +33,7 @@
 		const rect = heroNameEl.getBoundingClientRect();
 		heroLeft = rect.left;
 		heroDocTop = rect.top + window.scrollY;
-		heroH = rect.height;
+		heroHeight = rect.height;
 		measured = true;
 	}
 
@@ -48,10 +52,49 @@
 		});
 	}
 
+	const tiltHandlers: {
+		move: (event: PointerEvent) => void;
+		leave: (event: PointerEvent) => void;
+	} = {
+		move: () => {},
+		leave: () => {},
+	};
+
 	onMount(() => {
 		const reduceMotion = prefersReducedMotion();
 
 		scroll.start();
+
+		const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+		if (nameTiltEl && finePointer && !reduceMotion) {
+			tiltActive = true;
+			tiltHandlers.move = (event: PointerEvent) => {
+				if (!tiltActive || !nameTiltEl) return;
+				const rect = nameTiltEl.getBoundingClientRect();
+				if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+				const pointerXRatio = (event.clientX - rect.left) / Math.max(rect.width, 1) - 0.5;
+				const pointerYRatio = (event.clientY - rect.top) / Math.max(rect.height, 1) - 0.5;
+				if (tiltRAF !== null) return;
+				tiltRAF = requestAnimationFrame(() => {
+					tiltRAF = null;
+					if (!nameTiltEl) return;
+					const rotateXDeg = (-pointerYRatio * 9).toFixed(2);
+					const rotateYDeg = (pointerXRatio * 12).toFixed(2);
+					nameTiltEl.style.transform = `rotateX(${rotateXDeg}deg) rotateY(${rotateYDeg}deg)`;
+				});
+			};
+			tiltHandlers.leave = (event: PointerEvent) => {
+				if (event.relatedTarget !== null) return;
+				if (tiltRAF !== null) {
+					cancelAnimationFrame(tiltRAF);
+					tiltRAF = null;
+				}
+				if (!nameTiltEl) return;
+				nameTiltEl.style.transform = "rotateX(0deg) rotateY(0deg)";
+			};
+			window.addEventListener("pointermove", tiltHandlers.move, { passive: true });
+			window.addEventListener("pointerout", tiltHandlers.leave, { passive: true });
+		}
 
 		if (heroNameEl && !reduceMotion) {
 			const splitter = splitText(heroNameEl, {
@@ -60,11 +103,11 @@
 			});
 			animate(splitter.chars, {
 				opacity: [0, 1],
-				translateY: [28, 0],
-				rotateZ: [4, 0],
-				duration: 1000,
-				delay: stagger(42),
-				ease: "out(3)",
+				translateY: [40, 0],
+				rotateX: [-86, 0],
+				duration: 1100,
+				delay: stagger(46),
+				ease: "out(4)",
 			});
 		}
 
@@ -81,16 +124,28 @@
 			window.removeEventListener("resize", onResize);
 			window.removeEventListener("orientationchange", onResize);
 			if (resizeRAF !== null) cancelAnimationFrame(resizeRAF);
+			if (tiltRAF !== null) cancelAnimationFrame(tiltRAF);
+			window.removeEventListener("pointermove", tiltHandlers.move);
+			window.removeEventListener("pointerout", tiltHandlers.leave);
 		};
 	});
 
 	$effect(() => {
 		if (!heroNameEl) return;
-		const y = scroll.scrollY;
-		const { e } = heroNavProgress(y);
+		const scrollY = scroll.scrollY;
+		const { easedProgress } = heroNavProgress(scrollY);
+
+		if (easedProgress > 0.02 && tiltActive) {
+			tiltActive = false;
+			if (tiltRAF !== null) {
+				cancelAnimationFrame(tiltRAF);
+				tiltRAF = null;
+			}
+			if (nameTiltEl) nameTiltEl.style.transform = "rotateX(0deg) rotateY(0deg)";
+		}
 
 		if (prefersReducedMotion() || !measured) {
-			heroNameEl.style.opacity = y > 80 ? "0" : "1";
+			heroNameEl.style.opacity = scrollY > 80 ? "0" : "1";
 			heroNameEl.style.transform = "";
 			return;
 		}
@@ -99,28 +154,30 @@
 		if (!brand) return;
 		const brandRect = brand.getBoundingClientRect();
 
-		const dx = brandRect.left - heroLeft;
-		const dy = brandRect.top - heroDocTop;
-		const s = brandRect.height / Math.max(heroH, 1);
+		const deltaX = brandRect.left - heroLeft;
+		const deltaY = brandRect.top - heroDocTop;
+		const brandScale = brandRect.height / Math.max(heroHeight, 1);
 
-		const tp = easeInOutCubic(e);
-		const tx = dx * tp;
-		const ty = dy * tp + y;
-		const sc = 1 + (s - 1) * tp;
+		const transitionProgress = easeInOutCubic(easedProgress);
+		const translateX = deltaX * transitionProgress;
+		const translateY = deltaY * transitionProgress + scrollY;
+		const scale = 1 + (brandScale - 1) * transitionProgress;
 
 		heroNameEl.style.transformOrigin = "top left";
-		heroNameEl.style.transform = `translate3d(${tx.toFixed(2)}px, ${ty.toFixed(2)}px, 0) scale(${sc.toFixed(4)})`;
-		heroNameEl.style.opacity = String(1 - smoothstep(0.55, 0.95, e));
+		heroNameEl.style.transform = `translate3d(${translateX.toFixed(2)}px, ${translateY.toFixed(2)}px, 0) scale(${scale.toFixed(4)})`;
+		heroNameEl.style.opacity = String(1 - smoothstep(0.55, 0.95, easedProgress));
 
-		const v = Math.min(1, Math.max(0, scroll.velocity) * 1.6) * (1 - e);
-		heroNameEl.style.setProperty("--v", String(v));
+		const velocityFactor = Math.min(1, Math.max(0, scroll.velocity) * 1.6) * (1 - easedProgress);
+		heroNameEl.style.setProperty("--v", String(velocityFactor));
 	});
 </script>
 
 <section id="top" class="hero">
 	<div class="wrap">
 		<p class="meta">{handle} — {role}, {location}</p>
-		<h1 class="name" bind:this={heroNameEl}>{name}</h1>
+		<div class="name-tilt" bind:this={nameTiltEl}>
+			<h1 class="name" bind:this={heroNameEl}>{name}</h1>
+		</div>
 		<p class="bio hero-bio">{bio}</p>
 	</div>
 </section>
@@ -136,13 +193,21 @@
 		color: var(--ink-muted);
 		margin-bottom: 1.5rem;
 	}
+	.name-tilt {
+		width: fit-content;
+		margin-bottom: 2rem;
+		perspective: 1000px;
+		perspective-origin: 50% 60%;
+		transform-style: preserve-3d;
+		will-change: transform;
+	}
 	.name {
 		font-family: var(--font-display);
 		font-size: clamp(3.5rem, 2.2rem + 8vw, 8rem);
 		font-weight: 400;
 		line-height: 0.92;
 		letter-spacing: -0.04em;
-		margin-bottom: 2rem;
+		margin: 0;
 		position: relative;
 		z-index: 55;
 		width: fit-content;
@@ -150,10 +215,16 @@
 		pointer-events: none;
 		will-change: transform, opacity, filter;
 		filter: blur(calc(var(--v, 0) * 2.5px));
+		perspective: 1100px;
+		perspective-origin: 50% 100%;
+		transform-style: preserve-3d;
 	}
 	:global(.hero-char) {
 		display: inline-block;
 		will-change: transform, opacity;
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		transform-origin: bottom center;
 	}
 	.hero-bio {
 		font-size: clamp(1rem, 0.9rem + 0.5vw, 1.2rem);
@@ -177,6 +248,14 @@
 	@media (prefers-reduced-motion: reduce) {
 		.name {
 			filter: none;
+		}
+		.name-tilt {
+			transform: none !important;
+		}
+	}
+	@media (hover: none), (pointer: coarse) {
+		.name-tilt {
+			transform: none !important;
 		}
 	}
 </style>

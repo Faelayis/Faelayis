@@ -25,11 +25,18 @@ export function revealOnView(node: HTMLElement, params: RevealParams = {}): Reve
 
 	animate(node, { ...animation, autoplay: false });
 
+	let shown = false;
+
 	const observer = new IntersectionObserver((entries) => {
 		for (const entry of entries) {
 			if (entry.isIntersecting) {
+				if (shown) continue;
+				shown = true;
 				animate(node, { ...animation });
 				if (once) observer.disconnect();
+			} else if (!once) {
+				shown = false;
+				animate(node, { ...animation, autoplay: false });
 			}
 		}
 	}, options);
@@ -58,11 +65,17 @@ export function revealChars(node: HTMLElement, options: RevealCharsOptions = {})
 
 	animate(charNodes, { ...finalAnimation, autoplay: false });
 
+	let shown = false;
+
 	const observer = new IntersectionObserver((entries) => {
 		for (const entry of entries) {
 			if (entry.isIntersecting) {
+				if (shown) continue;
+				shown = true;
 				animate(charNodes, { ...finalAnimation, delay: stagger(staggerMs) });
-				observer.disconnect();
+			} else {
+				shown = false;
+				animate(charNodes, { ...finalAnimation, autoplay: false });
 			}
 		}
 	}, DEFAULT_OBSERVER_OPTIONS);
@@ -71,8 +84,8 @@ export function revealChars(node: HTMLElement, options: RevealCharsOptions = {})
 	return { destroy: () => observer.disconnect() };
 }
 
-export function inView(node: HTMLElement, options: { threshold?: number; rootMargin?: string } = {}): RevealAction {
-	const { threshold, rootMargin } = options;
+export function inView(node: HTMLElement, options: { threshold?: number; rootMargin?: string; once?: boolean } = {}): RevealAction {
+	const { threshold, rootMargin, once = true } = options;
 	const observerOptions: IntersectionObserverInit = {
 		...DEFAULT_OBSERVER_OPTIONS,
 		...(threshold !== undefined ? { threshold } : {}),
@@ -88,7 +101,9 @@ export function inView(node: HTMLElement, options: { threshold?: number; rootMar
 		for (const entry of entries) {
 			if (entry.isIntersecting) {
 				node.classList.add("in");
-				observer.disconnect();
+				if (once) observer.disconnect();
+			} else if (!once) {
+				node.classList.remove("in");
 			}
 		}
 	}, observerOptions);

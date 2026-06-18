@@ -1,12 +1,12 @@
-export function formatNumber(n: number): string {
-	if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
-	if (n >= 1_000) return (n / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
-	return String(n);
+export function formatNumber(value: number): string {
+	if (value >= 1_000_000) return (value / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+	if (value >= 1_000) return (value / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+	return String(value);
 }
 
 export function formatDate(iso: string): string {
-	const d = new Date(iso);
-	return d.toLocaleDateString("en-US", { year: "numeric", month: "short" });
+	const date = new Date(iso);
+	return date.toLocaleDateString("en-US", { year: "numeric", month: "short" });
 }
 
 export function timeAgo(iso: string): string {
@@ -21,7 +21,7 @@ export function timeAgo(iso: string): string {
 	return `${Math.floor(diff / (86400 * 365))}y ago`;
 }
 
-export function languageColor(lang: string): string {
+export function languageColor(language: string): string {
 	const map: Record<string, string> = {
 		TypeScript: "#3178c6",
 		JavaScript: "#f1e05a",
@@ -54,5 +54,5 @@ export function languageColor(lang: string): string {
 		MDX: "#fcb32c",
 		Markdown: "#083fa1",
 	};
-	return map[lang] ?? "#888888";
+	return map[language] ?? "#888888";
 }

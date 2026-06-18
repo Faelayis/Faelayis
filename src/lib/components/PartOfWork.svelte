@@ -9,8 +9,8 @@
 
 	let { partOfWork }: Props = $props();
 
-	const isActive = (p: PartOfWorkItem) => p.end.trim().toLowerCase() === "present";
-	const startYear = (p: PartOfWorkItem) => p.start.trim();
+	const isActive = (item: PartOfWorkItem) => item.end.trim().toLowerCase() === "present";
+	const startYear = (item: PartOfWorkItem) => item.start.trim();
 </script>
 
 <section id="part-of-work" class="part-of-work">
@@ -22,7 +22,7 @@
 
 		{#if partOfWork?.length}
 			<ol class="entry-list">
-				{#each partOfWork as item, i (item.name)}
+				{#each partOfWork as item, index (item.name)}
 					{@const active = isActive(item)}
 					<li
 						class="entry"
@@ -32,7 +32,7 @@
 							opacity: [0, 1],
 							translateY: [14, 0],
 							duration: 620,
-							delay: i * 60,
+							delay: index * 60,
 							ease: "out(3)",
 						}}
 					>
@@ -49,7 +49,7 @@
 						{/snippet}
 						{#snippet meta()}
 							<div class="entry-meta">
-								<span class="num mono">0{partOfWork.length - i}</span>
+								<span class="num mono">0{partOfWork.length - index}</span>
 								<span class="status" class:active>
 									<span class="pulse"></span>
 									{active ? "Active" : "Shipped"}

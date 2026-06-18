@@ -26,8 +26,8 @@
 	$effect(() => {
 		const id = scroll.activeSection;
 		if (!id) return;
-		const i = navItems.findIndex((l) => l.href === `#${id}`);
-		const navItem = navItemEls[i];
+		const index = navItems.findIndex((navItem) => navItem.href === `#${id}`);
+		const navItem = navItemEls[index];
 		if (!navItem) return;
 		indicatorStyle = {
 			left: `${navItem.offsetLeft}px`,
@@ -38,13 +38,13 @@
 
 	$effect(() => {
 		if (!brandInnerEl) return;
-		const y = scroll.scrollY;
-		const { e } = heroNavProgress(y);
+		const scrollY = scroll.scrollY;
+		const { easedProgress } = heroNavProgress(scrollY);
 		if (prefersReducedMotion()) {
-			brandInnerEl.style.opacity = y > 80 ? "1" : "0";
+			brandInnerEl.style.opacity = scrollY > 80 ? "1" : "0";
 			return;
 		}
-		brandInnerEl.style.opacity = String(smoothstep(0.5, 0.9, e));
+		brandInnerEl.style.opacity = String(smoothstep(0.5, 0.9, easedProgress));
 	});
 </script>
 
@@ -54,10 +54,10 @@
 			<a href="#top" class="brand"><span class="brand-inner" bind:this={brandInnerEl}>Faelayis</span></a>
 		</span>
 		<nav class="nav-items" aria-label="Primary">
-			{#each navItems as navItem, i}
+			{#each navItems as navItem, index}
 				<a
 					href={navItem.href}
-					bind:this={navItemEls[i]}
+					bind:this={navItemEls[index]}
 					class:active={scroll.activeSection === navItem.href.slice(1)}
 					use:magnetic={{ strength: 0.3, range: 1.4 }}
 				>

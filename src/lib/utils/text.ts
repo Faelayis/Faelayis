@@ -1,5 +1,5 @@
 export function prettify(name: string): string {
-	return name.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+	return name.replace(/[-_]/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 export function prettifyTag(tag: string): string {

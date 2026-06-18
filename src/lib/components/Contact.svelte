@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { animate } from "animejs";
 	import { revealOnView, inView } from "$utils/anime";
-	import { revealTitle, revealHint, revealMeta } from "$utils/reveal-presets";
+	import { revealTitle, revealHint, revealMeta, revealTiltY } from "$utils/reveal-presets";
 	import { copyToClipboard } from "$utils/browser";
 	import { magnetic } from "$actions/magnetic";
 	import { iconFor, resolveIcon } from "$icons/simple-icons";
@@ -64,17 +64,19 @@
 					<span>Contact</span>
 				</p>
 			</div>
-			<h2 class="title" use:revealOnView={revealTitle}>
-				Get in touch<span class="accent">.</span>
-			</h2>
+			<div class="title-3d">
+				<h2 class="title" use:revealOnView={revealTiltY}>
+					Get in touch<span class="accent">.</span>
+				</h2>
+			</div>
 			<p class="intro" use:revealOnView={revealHint}>
 				A short email is the fastest way in. The inbox is open for projects, questions, or just to say hi — every message gets a reply.
 			</p>
 		</header>
 
 		<div class="cards">
-			{#each socials as social, i (social.url)}
-				{@const ic = getIcon(social.label)}
+			{#each socials as social, index (social.url)}
+				{@const icon = getIcon(social.label)}
 				<a
 					href={social.url}
 					target="_blank"
@@ -83,14 +85,14 @@
 					aria-label="{social.label} (opens in new tab)"
 					use:revealOnView={{
 						...revealMeta,
-						delay: 100 + i * 50,
+						delay: 100 + index * 50,
 					}}
 					use:magnetic={{ strength: 0.2, range: 1.4 }}
 				>
 					<span class="card-label mono">{social.label}</span>
-					{#if ic}
-						<svg class="card-icon" viewBox="0 0 24 24" width="42" height="42" fill="#{ic.hex}" aria-hidden="true">
-							<path d={ic.path} />
+					{#if icon}
+						<svg class="card-icon" viewBox="0 0 24 24" width="42" height="42" fill="#{icon.hex}" aria-hidden="true">
+							<path d={icon.path} />
 						</svg>
 					{:else}
 						<span class="card-icon-fallback">{social.label.charAt(0)}</span>
@@ -161,12 +163,19 @@
 		background: var(--line-strong);
 	}
 
+	.title-3d {
+		perspective: 1100px;
+		perspective-origin: 0% 50%;
+	}
 	.title {
 		font-family: var(--font-display);
 		font-size: clamp(2.4rem, 1.5rem + 4vw, 4.5rem);
 		font-weight: 400;
 		letter-spacing: -0.035em;
 		line-height: 1.02;
+		transform-style: preserve-3d;
+		transform-origin: left center;
+		backface-visibility: hidden;
 	}
 	.title .accent {
 		color: var(--accent);

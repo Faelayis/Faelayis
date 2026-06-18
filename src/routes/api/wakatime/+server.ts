@@ -23,13 +23,13 @@ export const GET: RequestHandler = async ({ url, request, getClientAddress }) =>
 	}
 
 	const ip = getClientAddress();
-	const rl = rateLimit(`waka:${ip}`, RATE_LIMIT);
-	if (!rl.ok) {
+	const rateLimitResult = rateLimit(`waka:${ip}`, RATE_LIMIT);
+	if (!rateLimitResult.ok) {
 		return json(
 			{ error: "Too Many Requests" },
 			{
 				status: 429,
-				headers: { ...headers, "Retry-After": String(rl.retryAfter) },
+				headers: { ...headers, "Retry-After": String(rateLimitResult.retryAfter) },
 			},
 		);
 	}
@@ -48,11 +48,11 @@ export const GET: RequestHandler = async ({ url, request, getClientAddress }) =>
 		| "last_year"
 		| "all_time";
 
-	const ac = new AbortController();
-	const timeout = setTimeout(() => ac.abort(), UPSTREAM_TIMEOUT_MS);
+	const abortController = new AbortController();
+	const timeout = setTimeout(() => abortController.abort(), UPSTREAM_TIMEOUT_MS);
 
 	try {
-		const stats = await fetchWakaStats(username, range, privateEnv.WAKATIME_API_KEY, ac.signal);
+		const stats = await fetchWakaStats(username, range, privateEnv.WAKATIME_API_KEY, abortController.signal);
 		return json(stats, {
 			headers: {
 				...headers,

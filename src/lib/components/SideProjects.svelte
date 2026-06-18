@@ -3,8 +3,6 @@
 	import { revealTitle, revealHint } from "$utils/reveal-presets";
 	import { prettify } from "$utils/text";
 	import { languageColor } from "$utils/format";
-	import { slide } from "svelte/transition";
-	import { cubicOut } from "svelte/easing";
 
 	interface SideProject {
 		id: string;
@@ -49,9 +47,9 @@
 		{:else if sideProjects.length === 0}
 			<p class="empty">No projects to show yet.</p>
 		{:else}
-			<ol class="grid">
-				{#each visibleProjects as sideProject, i (sideProject.id)}
-					<li class="cell" use:inView transition:slide={{ duration: 360, easing: cubicOut, delay: i * 24 }}>
+			<ol class="grid" use:inView>
+				{#each visibleProjects as sideProject, index (sideProject.id)}
+					<li class="cell" style="--i: {index}">
 						<a
 							class="cell-link"
 							href={sideProject.url}
@@ -60,7 +58,7 @@
 							aria-label={prettify(sideProject.name)}
 							data-cursor="View"
 						>
-							<span class="num">{String(i + 1).padStart(2, "0")}</span>
+							<span class="num">{String(index + 1).padStart(2, "0")}</span>
 							<h3 class="name">{prettify(sideProject.name)}</h3>
 							<div class="meta">
 								{#if sideProject.primaryLanguage}
@@ -162,6 +160,18 @@
 		border: 1px solid var(--line);
 		background: var(--bg);
 		transition: background 240ms var(--easing-soft);
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	.grid:global(.in) .cell {
+		animation: cell-in 380ms var(--easing-soft) forwards;
+		animation-delay: calc(var(--i) * 45ms);
+	}
+	@keyframes cell-in {
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 	.cell:hover {
 		background: var(--bg-elev);
