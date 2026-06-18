@@ -142,7 +142,7 @@ jobs:
               publish_dir: ./build
               user_name: "github-actions[bot]"
               user_email: "github-actions[bot]@users.noreply.github.com"
-              commit_message: ""
+              full_commit_message: " "
               allow_empty_commit: true
               force_orphan: true
 
