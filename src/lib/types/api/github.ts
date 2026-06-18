@@ -19,7 +19,6 @@ export interface GitHubRepo {
 	createdAt: string;
 	pushedAt: string;
 	defaultBranchRef: { name: string } | null;
-	readmeCleaned: string | null;
 	image: string | null;
 	deployment: string | null;
 }
@@ -92,14 +91,6 @@ interface RawUserPayload {
 	};
 }
 
-interface RawReadmePayload {
-	repository: {
-		object: {
-			text: string;
-		} | null;
-	} | null;
-}
-
 interface RawGraphQLError {
 	type?: string;
 	message: string;
@@ -108,8 +99,7 @@ interface RawGraphQLError {
 
 interface RawGraphQLResponse<T> {
 	user?: RawUserPayload | null;
-	repository?: RawReadmePayload["repository"];
 	errors?: RawGraphQLError[];
 }
 
-export type { RawLanguageEdge, RawTopicNode, RawRepositoryNode, RawUserPayload, RawReadmePayload, RawGraphQLError, RawGraphQLResponse };
+export type { RawLanguageEdge, RawTopicNode, RawRepositoryNode, RawUserPayload, RawGraphQLError, RawGraphQLResponse };

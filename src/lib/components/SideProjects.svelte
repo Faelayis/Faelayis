@@ -1,8 +1,14 @@
 <script lang="ts">
+	import { onMount } from "svelte";
 	import { revealOnView, inView } from "$utils/anime";
 	import { revealTitle, revealHint } from "$utils/reveal-presets";
 	import { prettify } from "$utils/text";
 	import { languageColor } from "$utils/format";
+	import { buildSideProjects } from "$lib/api/merge-projects";
+	import { fetchApiJson } from "$lib/api/client";
+	import type { GitHubRepo } from "$types/api/github";
+	import type { MergedProjectRepo } from "$types/load";
+	import type { ProjectsConfig } from "$types/data/project";
 
 	interface SideProject {
 		id: string;
@@ -21,16 +27,31 @@
 		sideProjects: SideProject[];
 		error: string | null;
 		githubUsername: string;
+		projectsConfig: ProjectsConfig;
 	}
 
-	let { sideProjects, error, githubUsername }: Props = $props();
+	let { sideProjects, error, githubUsername, projectsConfig }: Props = $props();
 
 	const INITIAL_VISIBLE = 9;
 	let expanded = $state(false);
+	let liveProjects = $state<MergedProjectRepo[] | null>(null);
 
-	const visibleProjects = $derived(expanded ? sideProjects : sideProjects.slice(0, INITIAL_VISIBLE));
-	const hiddenCount = $derived(Math.max(0, sideProjects.length - INITIAL_VISIBLE));
-	const canToggle = $derived(sideProjects.length > INITIAL_VISIBLE);
+	const displayProjects: SideProject[] = $derived(liveProjects ?? sideProjects);
+
+	onMount(() => {
+		void (async () => {
+			try {
+				const data = await fetchApiJson<{ repos: GitHubRepo[] }>("/api/github");
+				liveProjects = buildSideProjects(data.repos, projectsConfig);
+			} catch {
+				//
+			}
+		})();
+	});
+
+	const visibleProjects = $derived(expanded ? displayProjects : displayProjects.slice(0, INITIAL_VISIBLE));
+	const hiddenCount = $derived(Math.max(0, displayProjects.length - INITIAL_VISIBLE));
+	const canToggle = $derived(displayProjects.length > INITIAL_VISIBLE);
 
 	function updatedLabel(project: SideProject): string {
 		const createdYear = new Date(project.createdAt).getFullYear();
@@ -57,7 +78,7 @@
 
 		{#if error}
 			<p class="empty">Couldn't load projects: {error}</p>
-		{:else if sideProjects.length === 0}
+		{:else if displayProjects.length === 0}
 			<p class="empty">No projects to show yet.</p>
 		{:else}
 			<ol class="grid" use:inView>

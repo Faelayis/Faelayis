@@ -32,7 +32,12 @@
 		bio={data.personalInfo.bio}
 	/>
 	<PartOfWork partOfWork={data.partOfWork} />
-	<SideProjects sideProjects={data.sideProjects} error={data.sideProjectsError} githubUsername={data.username} />
+	<SideProjects
+		sideProjects={data.sideProjects}
+		error={data.sideProjectsError}
+		githubUsername={data.username}
+		projectsConfig={data.projectsConfig}
+	/>
 	<TechSkills />
 	<About role={data.personalInfo.role} location={data.personalInfo.location} longBio={data.personalInfo.longBio} />
 	<Contact email={data.personalInfo.email} socials={data.personalInfo.socials} />

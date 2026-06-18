@@ -4,19 +4,21 @@ import type { RateLimitBucket, RateLimitConfig, RateLimitResult } from "$types/a
 export const ALLOWED_ORIGINS = ["https://faelayis.github.io", "https://faelayis.vercel.app"] as const;
 
 const VERCEL_PREVIEW = /^https:\/\/[a-z0-9-]+\.vercel\.app$/i;
+const LOCALHOST = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i;
 
 export function isAllowedOrigin(origin: string | null): boolean {
-	if (!origin) return false;
+	if (!origin) return import.meta.env.DEV;
 	if ((ALLOWED_ORIGINS as readonly string[]).includes(origin)) return true;
 	if (VERCEL_PREVIEW.test(origin)) return true;
+	if (LOCALHOST.test(origin)) return true;
 	return false;
 }
 
 export function corsHeadersFor(origin: string | null): Record<string, string> | null {
+	if (!origin) return null;
 	if (!isAllowedOrigin(origin)) return null;
-	const allowedOrigin = origin as string;
 	return {
-		"Access-Control-Allow-Origin": allowedOrigin,
+		"Access-Control-Allow-Origin": origin,
 		"Access-Control-Allow-Methods": "GET, OPTIONS",
 		"Access-Control-Allow-Headers": "Content-Type",
 		"Access-Control-Max-Age": "600",
@@ -26,7 +28,7 @@ export function corsHeadersFor(origin: string | null): Record<string, string> | 
 
 export function handleCorsPreflight({ request }: { request: Request }): Response {
 	const origin = request.headers.get("origin");
-	if (!isAllowedOrigin(origin)) {
+	if (!origin || !isAllowedOrigin(origin)) {
 		return new Response("Forbidden", { status: 403 });
 	}
 	const headers = corsHeadersFor(origin);

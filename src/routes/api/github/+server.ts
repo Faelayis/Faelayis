@@ -1,5 +1,5 @@
 import { json } from "@sveltejs/kit";
-import { fetchGitHubRepos, fetchReadme } from "$lib/api/github";
+import { fetchGitHubRepos } from "$lib/api/github";
 import { env as privateEnv } from "$env/dynamic/private";
 import { corsHeadersFor, handleCorsPreflight, isAllowedOrigin, rateLimit, securityHeaders } from "$lib/api/cors";
 import type { RequestHandler } from "./$types";
@@ -9,10 +9,11 @@ export const prerender = false;
 const USERNAME_RE = /^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$/;
 const RATE_LIMIT = { capacity: 60, refillPerSec: 1 };
 const UPSTREAM_TIMEOUT_MS = 8000;
+const MAX_REPOS = 100;
 
 export const OPTIONS: RequestHandler = handleCorsPreflight;
 
-export const GET: RequestHandler = async ({ url, request, getClientAddress }) => {
+export const GET: RequestHandler = async ({ request, getClientAddress }) => {
 	const origin = request.headers.get("origin");
 	const cors = corsHeadersFor(origin);
 	const headers = { ...(cors ?? {}), ...securityHeaders() };
@@ -38,24 +39,11 @@ export const GET: RequestHandler = async ({ url, request, getClientAddress }) =>
 		return json({ error: "Invalid login" }, { status: 400, headers });
 	}
 
-	const firstParam = Number(url.searchParams.get("first") ?? 24);
-	const first = Number.isFinite(firstParam) ? Math.min(100, Math.max(1, Math.floor(firstParam))) : 24;
-
-	const withReadme = url.searchParams.get("readme") === "1";
-
 	const abortController = new AbortController();
 	const timeout = setTimeout(() => abortController.abort(), UPSTREAM_TIMEOUT_MS);
 
 	try {
-		const { user, repos } = await fetchGitHubRepos(login, privateEnv.GITHUB_TOKEN, first, abortController.signal);
-		if (withReadme) {
-			await Promise.all(
-				repos.slice(0, 6).map(async (repo) => {
-					const [owner, name] = repo.nameWithOwner.split("/");
-					repo.readmeCleaned = await fetchReadme(owner, name, privateEnv.GITHUB_TOKEN, abortController.signal);
-				}),
-			);
-		}
+		const { user, repos } = await fetchGitHubRepos(login, privateEnv.GITHUB_TOKEN, MAX_REPOS, abortController.signal);
 
 		return json(
 			{

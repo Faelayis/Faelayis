@@ -82,35 +82,6 @@ const QUERY = /* GraphQL */ `
 	}
 `;
 
-const README_QUERY = /* GraphQL */ `
-	query GetReadme($owner: String!, $name: String!) {
-		repository(owner: $owner, name: $name) {
-			object(expression: "HEAD:README.md") {
-				... on Blob {
-					text
-				}
-			}
-		}
-	}
-`;
-
-function cleanReadme(markdown: string | null | undefined): string | null {
-	if (!markdown) return null;
-	return markdown
-		.replace(/<img[^>]*>/g, "")
-		.replace(/<picture[^>]*>[\s\S]*?<\/picture>/g, "")
-		.replace(/!\[([^\]]*)\]\([^)]*\)/g, "")
-		.replace(/\[!\[([^\]]*)\]\([^)]*\)\]\([^)]*\)/g, "")
-		.replace(/^#+\s.*$/gm, "")
-		.replace(/^---[\s\S]*?---/g, "")
-		.replace(/<\/?[^>]+>/g, "")
-		.replace(/[*_`~]+/g, "")
-		.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-		.replace(/\n{3,}/g, "\n\n")
-		.trim()
-		.slice(0, 600);
-}
-
 function buildRequest(token: string | undefined, signal: AbortSignal | undefined) {
 	const requestParameters: RequestParameters = {};
 	if (token) {
@@ -146,7 +117,6 @@ function mapRepository(raw: RawRepositoryNode): GitHubRepo {
 		createdAt: raw.createdAt,
 		pushedAt: raw.pushedAt,
 		defaultBranchRef: raw.defaultBranchRef,
-		readmeCleaned: null,
 		image: null,
 		deployment: raw.homepageUrl,
 	};
@@ -205,21 +175,4 @@ export async function fetchGitHubRepos(login: string, token?: string, maxRepos =
 	const publicRepos = allNodes.filter((repo) => !repo.isPrivate);
 	const repos = publicRepos.map(mapRepository);
 	return { user: user as GitHubUser, repos };
-}
-
-export async function fetchReadme(owner: string, name: string, token?: string, signal?: AbortSignal): Promise<string | null> {
-	const request = buildRequest(token, signal);
-	try {
-		const payload = (await request<RawGraphQLResponse<unknown>>(README_QUERY, {
-			owner,
-			name,
-		})) as RawGraphQLResponse<unknown>;
-
-		const repository = payload.repository;
-		const object = repository?.object;
-		if (!object || !("text" in object)) return null;
-		return cleanReadme(object.text);
-	} catch {
-		return null;
-	}
 }
