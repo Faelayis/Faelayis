@@ -1,0 +1,47 @@
+import type { PartOfWorkItem } from "$types/data/part-of-work";
+
+export const partOfWork: PartOfWorkItem[] = [
+	{
+		name: "EazeMe",
+		logo: "E",
+		logoUrl: "https://easeup-project.web.app/logo.webp",
+		role: "Backend",
+		description: "",
+		start: "2024",
+		end: "Present",
+		url: "https://easeup-project.web.app",
+		tags: ["Productivity"],
+	},
+	{
+		name: "Hareshi",
+		logo: "H",
+		logoUrl: "https://avatars.githubusercontent.com/u/108093242?s=200&v=4",
+		role: "Contributor",
+		description: "Contributions webapps and premid activities.",
+		start: "2022",
+		end: "2024",
+		url: "https://github.com/hareshi",
+	},
+	{
+		name: "Premid",
+		logo: "H",
+		logoUrl: "https://avatars.githubusercontent.com/u/46326568?s=200&v=4",
+		role: "Contributor",
+		description: "Activities for premid to display live website statuses on discord rich presence",
+		start: "2022",
+		end: "2024",
+		url: "https://premid.app",
+		tags: ["Activity Developer", "Open Source"],
+	},
+	{
+		name: "Mofunetive",
+		logo: "M",
+		logoUrl: "https://avatars.githubusercontent.com/u/109919769?s=200&v=4",
+		role: "Founder",
+		description: "Experimental playground for creative, motion-driven web experiences.",
+		start: "2021",
+		end: "Present",
+		url: "https://github.com/mofunetive",
+		tags: ["Lab", "Team"],
+	},
+];

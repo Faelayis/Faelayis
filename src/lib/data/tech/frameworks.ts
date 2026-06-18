@@ -1,0 +1,38 @@
+import {
+	siElectron,
+	siExpress,
+	siFastapi,
+	siFastify,
+	siFlutter,
+	siHono,
+	siLaravel,
+	siNestjs,
+	siNextdotjs,
+	siNuxt,
+	siReact,
+	siRemix,
+	siSpring,
+	siSvelte,
+	siTauri,
+	siVuedotjs,
+} from "simple-icons";
+import type { TechItem } from "$types/data/tech/types";
+
+export const FRAMEWORKS: TechItem[] = [
+	{ name: "SvelteKit", ...siSvelte },
+	{ name: "Next.js", ...siNextdotjs },
+	{ name: "React", ...siReact },
+	{ name: "Vue", ...siVuedotjs },
+	{ name: "Nuxt", ...siNuxt },
+	{ name: "Remix", ...siRemix },
+	{ name: "NestJS", ...siNestjs },
+	{ name: "Express", ...siExpress },
+	{ name: "Fastify", ...siFastify },
+	{ name: "Hono", ...siHono },
+	{ name: "FastAPI", ...siFastapi },
+	{ name: "Laravel", ...siLaravel },
+	{ name: "Spring", ...siSpring },
+	{ name: "Electron", ...siElectron },
+	{ name: "Tauri", ...siTauri },
+	{ name: "Flutter", ...siFlutter },
+];

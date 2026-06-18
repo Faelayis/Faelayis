@@ -1,0 +1,37 @@
+{
+	"name": "faelayis",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"build:static": "BUILD_TARGET=static vite build",
+		"build:vercel": "BUILD_TARGET=vercel vite build",
+		"vercel-build": "bun run build:vercel",
+		"deploy:vercel": "bun run build:vercel && vercel deploy --yes",
+		"deploy:vercel:prod": "bun run build:vercel && vercel deploy --prod --yes",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"prettier": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "3.0.10",
+		"@sveltejs/adapter-vercel": "6.3.3",
+		"@sveltejs/kit": "2.65.2",
+		"@sveltejs/vite-plugin-svelte": "7.1.2",
+		"@types/node": "25.9.3",
+		"prettier": "3.8.4",
+		"prettier-plugin-svelte": "4.1.1",
+		"svelte": "5.56.3",
+		"svelte-check": "4.6.0",
+		"typescript": "6.0.3",
+		"vite": "8.0.16"
+	},
+	"dependencies": {
+		"@octokit/graphql": "9.0.3",
+		"animejs": "4.4.1",
+		"simple-icons": "16.23.0"
+	}
+}
