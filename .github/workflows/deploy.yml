@@ -93,6 +93,58 @@ jobs:
            id: deployment
            uses: actions/deploy-pages@v4
 
+   github-pages-me-deploy:
+      if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && (inputs.target == 'all' || inputs.target == 'pages'))
+      permissions:
+         contents: read
+      runs-on: ubuntu-latest
+      env:
+         BUILD_TARGET: static
+         SITE_URL: https://faelayis.github.io/me
+      steps:
+         - name: Checkout
+           uses: actions/checkout@v4
+           with:
+              ref: website
+
+         - name: Setup Bun
+           uses: oven-sh/setup-bun@v2
+           with:
+              bun-version-file: package.json
+
+         - name: Get Bun cache directory
+           id: bun-cache
+           run: echo "dir=$(bun pm cache)" >> "$GITHUB_OUTPUT"
+
+         - name: Cache Bun dependencies
+           uses: actions/cache@v4
+           with:
+              path: ${{ steps.bun-cache.outputs.dir }}
+              key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+              restore-keys: |
+                 ${{ runner.os }}-bun-
+
+         - name: Install dependencies
+           run: bun install --frozen-lockfile
+
+         - name: Build static site
+           run: bun run build:static
+
+         - name: Add 404
+           run: cp build/index.html build/404.html
+
+         - name: Deploy to Faelayis/me
+           uses: peaceiris/actions-gh-pages@v4.1.0
+           with:
+              personal_token: ${{ secrets.PERSONAL_TOKEN }}
+              external_repository: Faelayis/me
+              publish_branch: gh-pages
+              publish_dir: ./build
+              user_name: 'github-actions[bot]'
+              user_email: 'github-actions[bot]@users.noreply.github.com'
+              commit_message: ${{ github.event.head_commit.message }}
+              force_orphan: true
+
    vercel-deploy:
       if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && (inputs.target == 'all' || inputs.target == 'vercel'))
       permissions:
