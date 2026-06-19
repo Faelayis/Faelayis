@@ -32,13 +32,24 @@
 
 	let { sideProjects, error, githubUsername, projectsConfig }: Props = $props();
 
-	const INITIAL_VISIBLE = 9;
+	const DESKTOP_INITIAL = 9;
+	const MOBILE_INITIAL = 5;
+	let isSingleColumn = $state(false);
 	let expanded = $state(false);
 	let liveProjects = $state<MergedProjectRepo[] | null>(null);
 
 	const displayProjects: SideProject[] = $derived(liveProjects ?? sideProjects);
+	const initialVisible = $derived(isSingleColumn ? MOBILE_INITIAL : DESKTOP_INITIAL);
+	const initialWord = $derived(isSingleColumn ? "Five" : "Nine");
 
 	onMount(() => {
+		const mql = window.matchMedia("(max-width: 520px)");
+		isSingleColumn = mql.matches;
+		const onColChange = (): void => {
+			isSingleColumn = mql.matches;
+		};
+		mql.addEventListener("change", onColChange);
+
 		void (async () => {
 			try {
 				const data = await fetchApiJson<{ repos: GitHubRepo[] }>("/api/github");
@@ -47,11 +58,15 @@
 				//
 			}
 		})();
+
+		return () => {
+			mql.removeEventListener("change", onColChange);
+		};
 	});
 
-	const visibleProjects = $derived(expanded ? displayProjects : displayProjects.slice(0, INITIAL_VISIBLE));
-	const hiddenCount = $derived(Math.max(0, displayProjects.length - INITIAL_VISIBLE));
-	const canToggle = $derived(displayProjects.length > INITIAL_VISIBLE);
+	const visibleProjects = $derived(expanded ? displayProjects : displayProjects.slice(0, initialVisible));
+	const hiddenCount = $derived(Math.max(0, displayProjects.length - initialVisible));
+	const canToggle = $derived(displayProjects.length > initialVisible);
 
 	function updatedLabel(project: SideProject): string {
 		const createdYear = new Date(project.createdAt).getFullYear();
@@ -71,7 +86,7 @@
 				Side Projects<span class="badge-soft">(Public)</span>
 			</h2>
 			<p class="hint" use:revealOnView={revealHint}>
-				Nine things I've built. The rest lives on
+				{initialWord} things I've built. The rest lives on
 				<a href="https://github.com/{githubUsername}" target="_blank" rel="noopener" class="ulink">GitHub</a>.
 			</p>
 		</header>
@@ -210,6 +225,15 @@
 	@media (max-width: 520px) {
 		.grid {
 			grid-template-columns: 1fr;
+		}
+		.cell .updated-date {
+			opacity: 0.75;
+			max-width: 24ch;
+		}
+		.cell .created-label {
+			opacity: 0.75;
+			max-width: 8ch;
+			margin-right: 0.4rem;
 		}
 	}
 

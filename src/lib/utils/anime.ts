@@ -1,5 +1,6 @@
 import { animate, stagger } from "animejs";
 import type { RevealAction, RevealCharsOptions, RevealParams } from "$types/utils/anime";
+import { replay, nearestSectionId } from "$utils/replay";
 
 function prefersReduceMotion(): boolean {
 	return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -42,7 +43,17 @@ export function revealOnView(node: HTMLElement, params: RevealParams = {}): Reve
 	}, options);
 	observer.observe(node);
 
-	return { destroy: () => observer.disconnect() };
+	const sectionId = nearestSectionId(node);
+	const offReplay = replay.on((id: string) => {
+		if (id === sectionId) animate(node, { ...animation });
+	});
+
+	return {
+		destroy() {
+			observer.disconnect();
+			offReplay();
+		},
+	};
 }
 
 const DEFAULT_CHAR_REVEAL = {
@@ -109,5 +120,18 @@ export function inView(node: HTMLElement, options: { threshold?: number; rootMar
 	}, observerOptions);
 	observer.observe(node);
 
-	return { destroy: () => observer.disconnect() };
+	const sectionId = nearestSectionId(node);
+	const offReplay = replay.on((id: string) => {
+		if (id !== sectionId) return;
+		node.classList.remove("in");
+		void node.offsetWidth;
+		node.classList.add("in");
+	});
+
+	return {
+		destroy() {
+			observer.disconnect();
+			offReplay();
+		},
+	};
 }

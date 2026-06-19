@@ -1,4 +1,5 @@
 import { prefersReducedMotion } from "$utils/browser";
+import { replay, nearestSectionId } from "$utils/replay";
 
 export interface ScrambleOptions {
 	chars?: string;
@@ -27,17 +28,7 @@ function randomChar(chars: string): string {
 }
 
 export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): ScrambleAction {
-	const {
-		chars,
-		speed = 38,
-		settleDelay = 26,
-		settleDuration = 560,
-		threshold,
-		rootMargin,
-		once = true,
-		charClass,
-		onCharSettle,
-	} = options;
+	const { chars, speed = 38, settleDelay = 26, settleDuration = 560, threshold, rootMargin, once = true, charClass, onCharSettle } = options;
 
 	const original = node.textContent ?? "";
 	const text = Array.from(original);
@@ -148,9 +139,16 @@ export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): 
 
 	setScrambled();
 
+	const sectionId = nearestSectionId(node);
+	const offReplay = replay.on((id: string) => {
+		if (id !== sectionId) return;
+		reset();
+		runScramble();
+	});
+
 	if (typeof IntersectionObserver === "undefined") {
 		runScramble();
-		return { destroy: () => {} };
+		return { destroy: () => offReplay() };
 	}
 
 	const observerOptions: IntersectionObserverInit = {
@@ -174,6 +172,7 @@ export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): 
 	return {
 		destroy() {
 			observer.disconnect();
+			offReplay();
 			if (rafId !== null) cancelAnimationFrame(rafId);
 		},
 	};

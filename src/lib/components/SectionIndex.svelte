@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { scroll } from "$utils/scroll.svelte";
 	import { onMount } from "svelte";
+	import { scrollThenReplay } from "$utils/replay";
 
 	interface Section {
 		id: string;
@@ -37,6 +38,12 @@
 
 	const items: Section[] = $derived(scroll.sections.map((section) => ({ id: section.id, label: resolveLabel(section) })));
 
+	function handleIndexClick(event: MouseEvent): void {
+		const anchor = event.currentTarget as HTMLAnchorElement | null;
+		if (!anchor) return;
+		scrollThenReplay(anchor.getAttribute("href") ?? "");
+	}
+
 	onMount(() => {
 		scroll.start();
 		return () => scroll.stop();
@@ -52,6 +59,7 @@
 						href="#{item.id}"
 						class:active={scroll.activeSection === item.id}
 						aria-current={scroll.activeSection === item.id ? "true" : undefined}
+						onclick={handleIndexClick}
 					>
 						<span class="num">{String(index + 1).padStart(2, "0")}</span>
 						<span class="lbl">{item.label}</span>

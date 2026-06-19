@@ -4,6 +4,7 @@
 	import { magnetic } from "$actions/magnetic";
 	import { heroNavProgress, smoothstep } from "$utils/hero-nav.svelte";
 	import { prefersReducedMotion } from "$utils/browser";
+	import { scrollThenReplay } from "$utils/replay";
 
 	const navItems = [
 		{ href: "#part-of-work", label: "Work" },
@@ -17,6 +18,12 @@
 	let navItemEls: (HTMLElement | null)[] = $state([null, null, null, null, null]);
 	let indicatorEl: HTMLElement | null = $state(null);
 	let indicatorStyle = $state({ left: "0px", width: "0px", opacity: 0 });
+
+	function handleNavClick(event: MouseEvent): void {
+		const anchor = event.currentTarget as HTMLAnchorElement | null;
+		if (!anchor) return;
+		scrollThenReplay(anchor.getAttribute("href") ?? "");
+	}
 
 	onMount(() => {
 		scroll.start();
@@ -51,7 +58,7 @@
 <header class="nav" class:scrolled={scroll.scrollY > 12} class:shrink={scroll.scrollY > 80}>
 	<div class="wrap row" bind:this={navEl}>
 		<span class="brand-mag" use:magnetic={{ strength: 0.4, range: 1.2 }}>
-			<a href="#top" class="brand"><span class="brand-inner" bind:this={brandInnerEl}>Faelayis</span></a>
+			<a href="#top" class="brand" onclick={handleNavClick}><span class="brand-inner" bind:this={brandInnerEl}>Faelayis</span></a>
 		</span>
 		<nav class="nav-items" aria-label="Primary">
 			{#each navItems as navItem, index}
@@ -60,6 +67,7 @@
 					bind:this={navItemEls[index]}
 					class:active={scroll.activeSection === navItem.href.slice(1)}
 					use:magnetic={{ strength: 0.3, range: 1.4 }}
+					onclick={handleNavClick}
 				>
 					{navItem.label}
 				</a>
