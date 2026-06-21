@@ -4,11 +4,6 @@
 	import { revealTitle, revealHint } from "$utils/reveal-presets";
 	import { prettify } from "$utils/text";
 	import { languageColor } from "$utils/format";
-	import { buildSideProjects } from "$lib/api/merge-projects";
-	import { fetchApiJson } from "$lib/api/client";
-	import type { GitHubRepo } from "$types/api/github";
-	import type { MergedProjectRepo } from "$types/load";
-	import type { ProjectsConfig } from "$types/data/project";
 
 	interface SideProject {
 		id: string;
@@ -27,18 +22,16 @@
 		sideProjects: SideProject[];
 		error: string | null;
 		githubUsername: string;
-		projectsConfig: ProjectsConfig;
 	}
 
-	let { sideProjects, error, githubUsername, projectsConfig }: Props = $props();
+	let { sideProjects, error, githubUsername }: Props = $props();
 
 	const DESKTOP_INITIAL = 9;
 	const MOBILE_INITIAL = 5;
 	let isSingleColumn = $state(false);
 	let expanded = $state(false);
-	let liveProjects = $state<MergedProjectRepo[] | null>(null);
 
-	const displayProjects: SideProject[] = $derived(liveProjects ?? sideProjects);
+	const displayProjects: SideProject[] = $derived(sideProjects);
 	const initialVisible = $derived(isSingleColumn ? MOBILE_INITIAL : DESKTOP_INITIAL);
 	const initialWord = $derived(isSingleColumn ? "Five" : "Nine");
 
@@ -49,15 +42,6 @@
 			isSingleColumn = mql.matches;
 		};
 		mql.addEventListener("change", onColChange);
-
-		void (async () => {
-			try {
-				const data = await fetchApiJson<{ repos: GitHubRepo[] }>("/api/github");
-				liveProjects = buildSideProjects(data.repos, projectsConfig);
-			} catch {
-				//
-			}
-		})();
 
 		return () => {
 			mql.removeEventListener("change", onColChange);
@@ -99,14 +83,8 @@
 			<ol class="grid" use:inView>
 				{#each visibleProjects as sideProject, index (sideProject.id)}
 					<li class="cell" style="--i: {index}">
-						<a
-							class="cell-link"
-							href={sideProject.url}
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label={prettify(sideProject.name)}
-							data-cursor="View"
-						>
+						<a class="cell-link" href={sideProject.url} target="_blank" rel="noopener noreferrer" data-cursor="View">
+							<span class="sr-only">{prettify(sideProject.name)} (opens in new tab)</span>
 							<span class="num-row">
 								<span class="num">{String(index + 1).padStart(2, "0")}</span>
 								{#if sideProject.isArchived}
@@ -242,16 +220,23 @@
 		background: var(--bg);
 		transition: background 240ms var(--easing-soft);
 		opacity: 0;
-		transform: translateY(12px);
+		transform: scale(0.82);
 	}
 	.grid:global(.in) .cell {
-		animation: cell-in 380ms var(--easing-soft) forwards;
+		animation: cell-in 480ms var(--easing-soft) forwards;
 		animation-delay: calc(var(--i) * 45ms);
 	}
 	@keyframes cell-in {
 		to {
 			opacity: 1;
-			transform: translateY(0);
+			transform: scale(1);
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.cell {
+			opacity: 1;
+			transform: none;
+			animation: none;
 		}
 	}
 	.cell:hover,
