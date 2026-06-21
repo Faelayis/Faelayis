@@ -6,8 +6,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"build:static": "BUILD_TARGET=static vite build",
-		"build:vercel": "BUILD_TARGET=vercel vite build",
+		"build:static": "BUILD_TARGET=static vite build && bun run scripts/inline-css.ts build",
+		"build:vercel": "BUILD_TARGET=vercel vite build && bun run scripts/inline-css.ts .vercel/output/static",
 		"vercel-build": "bun run build:vercel",
 		"deploy:vercel": "bun run build:vercel && vercel deploy --yes",
 		"deploy:vercel:prod": "bun run build:vercel && vercel deploy --prod --yes",
