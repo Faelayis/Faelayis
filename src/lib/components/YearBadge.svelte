@@ -15,9 +15,8 @@
 		font-family: var(--font-mono);
 		font-size: 0.7rem;
 		letter-spacing: 0.14em;
-		color: var(--ink-faint);
+		color: var(--ink-muted);
 		pointer-events: none;
 		user-select: none;
-		opacity: 0.85;
 	}
 </style>

@@ -102,9 +102,10 @@
 						aria-current={active ? "true" : undefined}
 						use:revealOnView={{
 							opacity: [0, 1],
-							translateY: [14, 0],
-							duration: 620,
-							delay: index * 60,
+							filter: ["blur(14px)", "blur(0px)"],
+							scale: [1.06, 1],
+							duration: 760,
+							delay: index * 70,
 							ease: "out(3)",
 						}}
 						use:tiltEntry
@@ -158,14 +159,8 @@
 						{/snippet}
 
 						{#if item.url}
-							<a
-								class="entry-link"
-								href={item.url}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Visit {item.name} (opens in new tab)"
-								data-cursor="View"
-							>
+							<a class="entry-link" href={item.url} target="_blank" rel="noopener noreferrer" data-cursor="View">
+								<span class="sr-only">Visit {item.name} (opens in new tab)</span>
 								<div class="cell-mark">{@render mark()}</div>
 								<div class="cell-main">
 									{@render meta()}

@@ -147,18 +147,14 @@
 		position: relative;
 		display: inline-block;
 		padding-block: 0.15rem;
-		transition:
-			color var(--duration-fast) var(--easing-soft),
-			opacity 320ms var(--easing-soft);
-		opacity: 0.6;
+		color: var(--ink-2);
+		transition: color var(--duration-fast) var(--easing-soft);
 	}
 	.nav .nav-items a.active {
 		color: var(--ink);
-		opacity: 1;
 	}
 	.nav .nav-items a:hover {
 		color: var(--ink);
-		opacity: 1;
 	}
 	.indicator {
 		position: absolute;

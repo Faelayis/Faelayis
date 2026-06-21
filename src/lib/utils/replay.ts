@@ -23,43 +23,13 @@ export function nearestSectionId(node: HTMLElement): string | null {
 	return null;
 }
 
-function onSmoothScrollSettled(cb: () => void): void {
-	if (typeof window === "undefined") {
-		cb();
-		return;
-	}
+function prefersReduceMotion(): boolean {
+	return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
 
-	let done = false;
-	let lastY = window.scrollY;
-	let stable = 0;
-	let raf = 0;
-	let cap = 0;
-
-	const finish = (): void => {
-		if (done) return;
-		done = true;
-		cancelAnimationFrame(raf);
-		clearTimeout(cap);
-		cb();
-	};
-
-	const tick = (): void => {
-		const y = window.scrollY;
-		if (Math.abs(y - lastY) < 1) {
-			stable++;
-			if (stable >= 8) {
-				finish();
-				return;
-			}
-		} else {
-			stable = 0;
-		}
-		lastY = y;
-		raf = requestAnimationFrame(tick);
-	};
-
-	raf = requestAnimationFrame(tick);
-	cap = window.setTimeout(finish, 2000);
+function isInViewport(rect: DOMRect): boolean {
+	const viewH = window.innerHeight;
+	return rect.top < viewH * 0.85 && rect.bottom > viewH * 0.15;
 }
 
 export function scrollThenReplay(hash: string): void {
@@ -73,12 +43,40 @@ export function scrollThenReplay(hash: string): void {
 		return;
 	}
 
-	const targetY = target.getBoundingClientRect().top + window.scrollY;
-	const distance = Math.abs(targetY - window.scrollY);
-	if (distance < 4) {
+	if (prefersReduceMotion() || typeof IntersectionObserver === "undefined") {
 		emit();
 		return;
 	}
 
-	onSmoothScrollSettled(emit);
+	if (isInViewport(target.getBoundingClientRect())) {
+		emit();
+		return;
+	}
+
+	let done = false;
+	let observer: IntersectionObserver | null = null;
+	let timeout: number | undefined;
+
+	const finish = (): void => {
+		if (done) return;
+		done = true;
+		if (observer) observer.disconnect();
+		window.clearTimeout(timeout);
+		emit();
+	};
+
+	observer = new IntersectionObserver(
+		(entries) => {
+			for (const entry of entries) {
+				if (entry.isIntersecting) {
+					finish();
+					return;
+				}
+			}
+		},
+		{ rootMargin: "0px 0px -15% 0px", threshold: 0 },
+	);
+	observer.observe(target);
+
+	timeout = window.setTimeout(finish, 1200);
 }

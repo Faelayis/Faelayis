@@ -182,7 +182,7 @@
 				{name}
 			</h1>
 		</div>
-		<p class="bio hero-bio" use:scrambleText={{ speed: 18, settleDelay: 8, settleDuration: 220 }}>{bio}</p>
+		<p class="bio hero-bio">{bio}</p>
 	</div>
 </section>
 

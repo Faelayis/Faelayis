@@ -95,7 +95,7 @@
 		align-items: center;
 		gap: 0.65rem;
 		padding: 0.25rem 0;
-		color: var(--ink-faint);
+		color: var(--ink-2);
 		font-family: var(--font-mono);
 		font-size: 0.68rem;
 		letter-spacing: 0.08em;
@@ -105,8 +105,7 @@
 			transform 360ms var(--easing-soft);
 	}
 	.num {
-		opacity: 0.4;
-		transition: opacity 320ms var(--easing-soft);
+		transition: color 320ms var(--easing-soft);
 	}
 	.lbl {
 		max-width: 0;
@@ -129,14 +128,14 @@
 			box-shadow 320ms var(--easing-soft);
 	}
 	a:hover {
-		color: var(--ink-2);
+		color: var(--ink);
 	}
 	a.active {
 		color: var(--ink);
 		transform: translateX(-2px);
 	}
 	a.active .num {
-		opacity: 1;
+		color: var(--ink);
 	}
 	a.active .lbl {
 		max-width: 8rem;

@@ -64,6 +64,15 @@ export function scrambleText(node: HTMLElement, options: ScrambleOptions = {}): 
 	node.textContent = "";
 	node.appendChild(frag);
 
+	const reserveHeight = (): void => {
+		const height = node.getBoundingClientRect().height;
+		if (height > 0) node.style.minHeight = `${height}px`;
+	};
+	reserveHeight();
+	if (typeof document !== "undefined" && document.fonts?.ready) {
+		document.fonts.ready.then(reserveHeight).catch(() => {});
+	}
+
 	if (prefersReducedMotion()) {
 		return { destroy: () => {} };
 	}

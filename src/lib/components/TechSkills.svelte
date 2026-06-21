@@ -174,7 +174,7 @@
 			background var(--duration-fast) var(--easing-soft),
 			transform var(--duration-fast) var(--easing-out);
 		opacity: 0;
-		transform: translateY(8px);
+		transform: translateY(-14px);
 	}
 	.item-bare {
 		padding-left: 0.9rem;
@@ -186,13 +186,20 @@
 		transform: translateY(-1px);
 	}
 	.categories:global(.in) .item {
-		animation: item-in 500ms var(--easing-soft) forwards;
-		animation-delay: calc(var(--i) * 25ms);
+		animation: item-in 560ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+		animation-delay: calc(var(--i) * 30ms);
 	}
 	@keyframes item-in {
 		to {
 			opacity: 1;
 			transform: translateY(0);
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.item {
+			opacity: 1;
+			transform: none;
+			animation: none;
 		}
 	}
 	.item-icon {
