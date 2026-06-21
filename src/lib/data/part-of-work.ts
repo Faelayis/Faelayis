@@ -15,7 +15,7 @@ export const partOfWork: PartOfWorkItem[] = [
 	{
 		name: "Hareshi",
 		logo: "H",
-		logoUrl: "https://avatars.githubusercontent.com/u/108093242?s=200&v=4",
+		logoUrl: "https://avatars.githubusercontent.com/u/108093242?s=48&v=4",
 		role: "Contributor",
 		description: "Contributions webapps and premid activities.",
 		start: "2022",
@@ -25,7 +25,7 @@ export const partOfWork: PartOfWorkItem[] = [
 	{
 		name: "Premid",
 		logo: "H",
-		logoUrl: "https://avatars.githubusercontent.com/u/46326568?s=200&v=4",
+		logoUrl: "https://avatars.githubusercontent.com/u/46326568?s=48&v=4",
 		role: "Contributor",
 		description: "Activities for premid to display live website statuses on discord rich presence",
 		start: "2022",
@@ -36,7 +36,7 @@ export const partOfWork: PartOfWorkItem[] = [
 	{
 		name: "Mofunetive",
 		logo: "M",
-		logoUrl: "https://avatars.githubusercontent.com/u/109919769?s=200&v=4",
+		logoUrl: "https://avatars.githubusercontent.com/u/109919769?s=48&v=4",
 		role: "Founder",
 		description: "Experimental playground for creative, motion-driven web experiences.",
 		start: "2021",
