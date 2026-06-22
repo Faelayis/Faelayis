@@ -44,4 +44,14 @@ export const partOfWork: PartOfWorkItem[] = [
 		url: "https://github.com/mofunetive",
 		tags: ["Lab", "Team"],
 	},
+	{
+		name: "Canary Project",
+		logo: "C",
+		logoUrl: "https://avatars.githubusercontent.com/u/94060976?s=48&v=4",
+		role: "Founder",
+		start: "2021",
+		end: "2022",
+		url: "https://github.com/Canary-Bot-Project",
+		tags: ["Discord Bot Music", "Lab", "Team"],
+	},
 ];

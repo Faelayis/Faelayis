@@ -16,7 +16,9 @@
 		<div class="title-3d">
 			<h2 class="section-title" use:revealOnView={revealTiltX}>About</h2>
 		</div>
-		<p class="bio" use:revealOnView={revealHint}>{longBio}</p>
+		{#if longBio.trim()}
+			<p class="bio" use:revealOnView={revealHint}>{longBio}</p>
+		{/if}
 		<p class="meta-line" use:revealOnView={revealMeta}>{role} · {location}</p>
 	</div>
 </section>

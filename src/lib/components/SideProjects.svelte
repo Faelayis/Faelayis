@@ -80,7 +80,7 @@
 		{:else if displayProjects.length === 0}
 			<p class="empty">No projects to show yet.</p>
 		{:else}
-			<ol class="grid" use:inView>
+			<ol id="side-projects-grid" class="grid" use:inView>
 				{#each visibleProjects as sideProject, index (sideProject.id)}
 					<li class="cell" style="--i: {index}">
 						<a class="cell-link" href={sideProject.url} target="_blank" rel="noopener noreferrer" data-cursor="View">

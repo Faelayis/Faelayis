@@ -2,12 +2,14 @@ import adapter from "@sveltejs/adapter-static";
 import adapterVercel from "@sveltejs/adapter-vercel";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
+const buildTarget = process.env.BUILD_TARGET ?? "";
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter:
-			process.env.BUILD_TARGET === "vercel"
+			buildTarget === "vercel"
 				? adapterVercel()
 				: adapter({
 						pages: "build",
@@ -16,6 +18,9 @@ const config = {
 						precompress: false,
 						strict: false,
 					}),
+		// paths: {
+		// 	base: buildTarget === "static" ? "/me" : "",
+		// },
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
 				if (path.startsWith("/api/")) return;

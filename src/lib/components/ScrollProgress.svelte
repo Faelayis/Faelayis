@@ -1,11 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { scroll } from "$utils/scroll.svelte";
-	import { prefersReducedMotion } from "$utils/browser";
-
-	let headEl: HTMLElement | null = $state(null);
-
-	const reduce = prefersReducedMotion();
 
 	onMount(() => {
 		scroll.start();
@@ -15,7 +10,11 @@
 
 <div class="track" aria-hidden="true">
 	<div class="bar" style="transform: scaleX({scroll.scrollProgress})"></div>
-	<div class="head" bind:this={headEl} style="left: {scroll.scrollProgress * 100}%; --v: {Math.min(1, Math.abs(scroll.velocity) * 1.4)}"></div>
+	<div
+		class="head"
+		style="--v: {Math.min(1, Math.abs(scroll.velocity) * 1.4)}; transform: translate3d({scroll.scrollProgress *
+			100}vw, 0, 0) translateX(-50%) scale(calc(1 + var(--v, 0) * 0.9))"
+	></div>
 </div>
 
 <style>
@@ -40,16 +39,15 @@
 	.head {
 		position: absolute;
 		top: -3px;
+		left: 0;
 		width: 14px;
 		height: 8px;
-		margin-left: -7px;
 		border-radius: 999px;
 		background: var(--accent);
 		filter: blur(4px);
 		opacity: calc(0.5 + var(--v, 0) * 0.5);
-		transform: scale(calc(1 + var(--v, 0) * 0.9));
 		mix-blend-mode: plus-lighter;
-		will-change: transform, opacity, left;
+		will-change: transform, opacity;
 		pointer-events: none;
 	}
 	:global([data-theme="dark"]) .head,
