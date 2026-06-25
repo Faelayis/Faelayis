@@ -49,6 +49,7 @@ export const partOfWork: PartOfWorkItem[] = [
 		logo: "C",
 		logoUrl: "https://avatars.githubusercontent.com/u/94060976?s=48&v=4",
 		role: "Founder",
+		description: "Discord bot music project. Built and managed a team environment for developing music playback functionality on Discord.",
 		start: "2021",
 		end: "2022",
 		url: "https://github.com/Canary-Bot-Project",
