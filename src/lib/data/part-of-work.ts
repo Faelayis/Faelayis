@@ -7,7 +7,7 @@ export const partOfWork: PartOfWorkItem[] = [
 		logoUrl: "https://easeup-project.web.app/logo.webp",
 		role: "Backend",
 		description: "Architected and developed a production-ready ecosystem.",
-		start: "2024",
+		start: "2025",
 		end: "Present",
 		url: "https://easeup-project.web.app",
 		tags: ["Productivity"],
